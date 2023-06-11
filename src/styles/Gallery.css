@@ -1,0 +1,64 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-image {
+    cursor: zoom-in;
+    background-color: grey;
+    width: 250px;
+    height: 250px;
+}
+
+.gallery-image > img {
+    position: absolute;
+    /* opacity: 0; */
+    z-index: 1;
+}
+
+.gallery-image > img:hover {
+    opacity: 0.5;
+}
+
+.image-overlay-text-box {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    z-index: 0;
+}
+
+.image-overlay-text {
+    margin: 0;
+    width: fit-content;
+    height: 32px;
+    position: relative;
+    top: calc(50% - 16px);
+    left: calc(50% - 36px);
+    color: black;
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+}
+
+.image-overlay-text > p {
+    margin: 0;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 99999px;
+    font-weight: bold;
+}
+
+.custom-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lightbox-image {
+    width: 350;
+    height: 350;
+    overflow: auto;
+}

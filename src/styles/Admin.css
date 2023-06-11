@@ -1,0 +1,43 @@
+.login-form {
+    width: 280px;
+    padding: 30px 20px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-form > input {
+    all: unset;
+    border: 1px solid black;
+    height: 30px;
+    width: 200px;
+    padding: 5px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login-form > button {
+    all: unset;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-blue);
+    color: var(--color-light-grey);
+    padding: 5px 10px;
+}
+
+.image-upload-table {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.image-upload-table > .inputs {
+    display: flex;
+}
+
+.image-uploads {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

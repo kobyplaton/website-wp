@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: var(--nav-height);
+}
+
+.nav-content {
+    width: calc(100% - 40px);
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}

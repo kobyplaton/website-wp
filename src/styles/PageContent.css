@@ -1,0 +1,12 @@
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px 20px 40px;
+    gap: 50px;
+    width: calc(100% - 80px);
+}
+
+.dark {
+    background-color: var(--color-grey);
+}

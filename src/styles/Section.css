@@ -1,0 +1,17 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px 40px 40px;
+    gap: 50px;
+    width: calc(100% - 80px);
+}
+
+.dark {
+    background-color: var(--color-light-grey);
+}
+
+.black {
+    background-color: var(--color-black);
+    color: var(--button-text-color);
+}

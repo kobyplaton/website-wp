@@ -1,0 +1,18 @@
+:root {
+    /* --button-main-color: rgb(19, 92, 227); */
+    --button-text-color: #fff;
+}
+
+.button-main {
+    font-family: var(--font-secondary);
+    background-color: var(--color-blue);
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-blue);
+    color: var(--button-text-color);
+}
+
+.button-main:hover, .button-main:active {
+    background-color: var(--button-text-color);
+    color: var(--color-blue);
+}
