@@ -25,9 +25,40 @@
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 .nav-right {
     display: flex;
     align-items: center;
+}
+
+.nav-lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 18px;
+    background-color: black;
+}
+
+.lang-el {
+    cursor: pointer;
+    border-radius: 10%;
+    padding: 0 5px;
+    opacity: 0.5;
+}
+
+.lang-el:hover {
+    background-color: rgb(224, 222, 222);
+}
+
+.lang-chosen {
+    color: var(--color-blue);
+    opacity: 1;
 }

@@ -10,7 +10,7 @@
 
 .subsection > h3 {
     font-weight: 300;
-    color: rgb(41, 93, 207);
+    color: var(--color-blue);
     text-align: start;
 }
 
