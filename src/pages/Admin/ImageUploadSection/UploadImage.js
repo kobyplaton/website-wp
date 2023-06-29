@@ -1,7 +1,8 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Button } from 'react-bootstrap';
+import CustomImage from './CustomImage';
 
-function UploadImage({ image, uploadImageToDb, setImagesUploaded }) {
+function UploadImage({ file, image, uploadImageToDb, setImagesUploaded }) {
 
     const {title, width, height, price, details} = image;
     const titleRef = useRef(title)
@@ -9,6 +10,7 @@ function UploadImage({ image, uploadImageToDb, setImagesUploaded }) {
     const heightRef = useRef(height)
     const priceRef = useRef(price)
     const detailsRef = useRef(details)
+    const [ratio, setRatio] = useState() 
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -25,7 +27,7 @@ function UploadImage({ image, uploadImageToDb, setImagesUploaded }) {
 
   return (
     <div key={image.id} className="image-profile">
-        <img src={URL.createObjectURL(image.imageFile)} width={250} height={250} />
+        <CustomImage imageFile={image.imageFile} />
         <form name='details-form'>
           <div className="form-group">
             <label htmlFor='title'>Title:</label>

@@ -43,7 +43,7 @@ const router = createBrowserRouter([
     element: <Admin />
   },
   {
-    path: '/order',
+    path: '/become-our-client',
     element: <OrderInstruction />
   }
 ])

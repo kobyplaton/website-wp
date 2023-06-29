@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {AiOutlineMenu} from 'react-icons/ai'
-import {BsGlobe2} from 'react-icons/bs'
-import logo from './TWPlogo_RGB.png'
+import logo from '../../styles/images/logo.png'
 import '../../styles/Nav.css'
 import Menu from './Menu'
 import { useNavigate } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
-import { savePreferedLanguage } from '../../extras/localStorageFuncs'
 import LangDropDown from './LangDropDown'
 import { useWindowSize } from '@uidotdev/usehooks'
 import MenuPc from './MenuPc'
@@ -28,7 +25,7 @@ function Nav() {
     <div className='nav'>
         <div className="nav-content">
             <div className="nav-right">
-                <img onClick={navigateHome} width={100} height={50} src={logo} alt='logo' />
+                <img onClick={navigateHome} width={50} height={50} src={logo} alt='logo' />
             </div>
             <div className="nav-left">
                 <LangDropDown />

@@ -1,32 +1,141 @@
 {
     "Home": {
-        "heading": "Imprimimos em suas paredes",
+        "heading": "Nós imprimimos nas suas paredes",
         "Hero": {
-            "heading": "Watch Our Introductory Video!",
-            "text": "This video shows how we create our desins and bring them to your wall!",
-            "button": "Get Started"
+            "heading": "Assista ao nosso vídeo introdutório!",
+            "text": "Este vídeo mostra como criamos nossos designs e os levamos até a sua parede!",
+            "button": "Começar"
+        },
+        "ContactUs": {
+            "heading": "Contact Us",
+            "icon1": "Nosso escritório em Faro",
+            "icon2": "Estacionamento nas proximidades"
+        },
+        "AboutUs": {
+            "heading": "About Us",
+            "section1": {
+                "text": "",
+                "bullet1": "",
+                "bullet2": "",
+                "bullet3": "",
+                "bullet4": ""
+            },
+            "section2": "",
+            "section3": ""
+        },
+        "WallPrinting": {
+            "heading": "How does wall printing work?",
+            "intro": "A impressão em paredes é uma técnica inovadora e empolgante que permite a aplicação direta de designs personalizados nas paredes. Vamos explorar o processo de como a impressão em parede funciona, combinando tecnologia, criatividade e habilidade artesanal para criar exibições visuais impressionantes.",
+            "conclusion": "Após a impressão, a superfície precisa de tempo para secar e permitir que a tinta se fixe adequadamente. Isso pode levar algumas horas ou mais. Para proteger a impressão, pode ser aplicado um revestimento protetor ou selante para torná-la mais durável.",
+            "conclusion1": "A impressão em paredes combina tecnologia e habilidades artísticas para dar vida a designs personalizados nas paredes. Ao compreender o processo, podemos apreciar a habilidade artesanal e a criatividade envolvidas. Essa técnica inovadora abre novas possibilidades para a personalização, branding e expressão artística em diversos espaços. Conforme a impressão em paredes continua a evoluir, ela desempenha um papel significativo no mundo da arte contemporânea.",
+            "section1": {
+                "heading": "1. Como funciona a impressão em parede?",
+                "text": "A impressão em paredes começa com impressoras especiais projetadas especificamente para esse fim. Essas impressoras avançadas garantem uma reprodução precisa e de alta qualidade da imagem."
+            },
+            "section2": {
+                "heading": "2. Preparação da superfície:",
+                "text": "Antes da impressão, a superfície da parede é cuidadosamente preparada, removendo qualquer poeira ou sujeira. Às vezes, é aplicado um primer ou camada base para ajudar a aderência da impressão e obter os melhores resultados possíveis."
+            },
+            "section3": {
+                "heading": "3. Processamento de imagem digital:",
+                "text": "O design ou imagem desejados são processados digitalmente e ajustados para atender aos requisitos da impressora. Isso garante que a imagem seja impressa corretamente na parede."
+            },
+            "section4": {
+                "heading": "4. Alinhamento e calibração:",
+                "text": "A impressora utiliza sistemas de alinhamento e calibração para posicionar com precisão a cabeça de impressão. Isso garante que o design seja impresso no local correto da parede."
+            },
+            "section5": {
+                "heading": "5. Aplicação de tinta:",
+                "text": "Tintas especiais são utilizadas na impressão em paredes para garantir que elas adiram bem a diferentes materiais de parede e resistam a fatores ambientais. A impressora aplica a tinta em camadas, construindo a imagem com detalhes precisos e cores."
+            },
+            "section6": {
+                "heading": "6. Preservação da textura da parede:",
+                "text": "Um aspecto importante da impressão em paredes é preservar a textura original da parede. A tinta é aplicada de uma forma que respeita e mantém a sensação única da parede, para que sua textura não seja alterada."
+            },
+            "section7": {
+                "heading": "7. Secagem e acabamento:",
+                "text": "Após a impressão, a superfície precisa de tempo para secar e permitir que a tinta se fixe adequadamente. Isso pode levar algumas horas ou mais. Para proteger a impressão, pode ser aplicado um revestimento protetor ou selante para torná-la mais durável."
+            }
+        },
+        "ContactForm": {
+            "heading": "Envie-nos uma mensagem e responderemos em até 48 horas.",
+            "name": "O seu nome",
+            "email": "E-mail",
+            "message": "Sua Mensagem",
+            "button": "Enviar Uma Mensagem",
+            "recieved": "E-mail recebido.",
+            "error": "Oops, algo deu errado. Por favor, tente novamente mais tarde!"
         },
         "Faq": {
+            "Question0": {
+                "question": "O que é impressão em parede?",
+                "answer": "A impressão em paredes é um método inovador que envolve o uso de uma impressora especializada para aplicar designs personalizados diretamente em várias superfícies. Esta técnica elimina a necessidade de colas ou componentes adesivos, garantindo que a textura original e a aparência da parede se mantenham intactas. Permite transformar paredes simples em obras de arte personalizadas e visualmente impressionantes, tornando-a uma solução ideal para adicionar carácter e individualidade a qualquer espaço."
+            },
             "Question1": {
-                "question": "How big can the wall art be?",
-                "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis quibusdam debitis consectetur! Unde voluptas commodi voluptatibus corrupti odit sequi. Eos, nisi? Sint, voluptate minus suscipit obcaecati qui fuga voluptates?"
+                "question": "Quais são os custos da impressão?",
+                "answer": "A precificação dos nossos serviços é determinada com base em vários fatores, incluindo localização, tamanho da obra de arte e qualidade da imagem. Normalmente, os nossos preços variam entre €150 e €250 por metro quadrado. No entanto, para instalações mais complexas, pode ser aplicada uma taxa de configuração. Para projetos maiores ou múltiplas imagens, oferecemos preços especiais de projeto. Isso nos permite adaptar a precificação de acordo com os requisitos específicos e o escopo do projeto, garantindo que você receba um preço justo e competitivo pelos nossos serviços."
             },
             "Question2": {
-                "question": "What colours can be printed?",
-                "answer": "You can get started by clicking the button below!"
+                "question": "Quanto tempo dura o trabalho de impressão?",
+                "answer": "O tempo de produção para a sua obra de arte pode variar dependendo do seu tamanho. Peças menores podem levar cerca de 30 minutos, enquanto as maiores podem exigir várias horas para serem concluídas. A nossa máquina tem a capacidade de imprimir um metro quadrado dentro de uma hora. É importante ressaltar que os tempos de configuração também podem variar dependendo da complexidade do projeto. Isso pode variar de 15 minutos para configurações mais simples a várias horas, especialmente se andaimes ou equipamentos adicionais forem necessários para garantir um processo de impressão bem-sucedido. Nós nos esforçamos para gerenciar eficientemente o processo de configuração e produção para fornecer resultados da mais alta qualidade dentro do prazo."
             },
             "Question3": {
-                "question": "How do I get started?",
-                "answer": "You can get started by clicking the button below!"
+                "question": "Quais cores podem ser impressas?",
+                "answer": "A nossa impressora utiliza o modelo de cores CMYK, enquanto as câmeras digitais convencionais e as imagens encontradas na internet normalmente utilizam o modelo de cores RGB. Portanto, será necessário converter todas as imagens que utilizam o modelo de cores RGB antes de imprimi-las. Embora nos esforcemos para manter a compatibilidade de cores, não podemos garantir uma replicação exata das cores. É importante ressaltar que também podemos imprimir na cor branca. A nossa impressora de parede é a única opção disponível capaz de imprimir na cor branca, o que abre inúmeras possibilidades, especialmente ao trabalhar com fundos escuros ou coloridos."
             },
             "Question4": {
-                "question": "How do I get started?",
-                "answer": "You can get started by clicking the button below!"
+                "question": "Em quais tipos de paredes é possível fazer a impressão?",
+                "answer": "Temos a capacidade de imprimir em praticamente qualquer superfície de parede que seja compatível com a nossa tinta. Isso inclui materiais comuns, como cimento, tijolo e drywall, entre outros. No entanto, as possibilidades não param por aí. Também podemos imprimir em superfícies como madeira, azulejos e até mesmo vidro, ampliando a gama de opções de impressão disponíveis."
             },
             "Question5": {
-                "question": "How do I get started?",
-                "answer": "You can get started by clicking the button below!"
+                "question": "Posso imprimir a minha própria imagem?",
+                "answer": "Sim, podemos imprimir imagens em nossas obras de arte em parede. No entanto, é crucial considerar a qualidade da imagem, pois ela influencia significativamente o resultado final. Geralmente, recomendamos o uso de imagens com uma resolução de 300 dpi (pontos por polegada) para obter a melhor qualidade de impressão. Além disso, observe que pode haver restrições quanto à altura da imagem para garantir o melhor resultado possível."
+            },
+            "Question6": {
+                "question": "É necessário um designer para a seleção da imagem?",
+                "answer": "Estamos dedicados a ajudá-lo a selecionar a arte perfeita para a sua casa. Se você tiver um designer ou não, estamos entusiasmados em colaborar e trabalhar juntos para criar o design ideal que complemente perfeitamente o seu espaço. A sua satisfação é a nossa prioridade e estamos comprometidos em atender às demandas e preferências específicas do seu projeto."
+            },
+            "Question7": {
+                "question": "Quais são as condições e requisitos para a impressão em paredes?",
+                "answer": "As imagens podem ser impressas para aplicações tanto internas quanto externas. Quando expostas em ambientes internos, espera-se que as cores das imagens impressas mantenham sua qualidade por aproximadamente 10 anos. Para instalações externas, a durabilidade das cores é estimada em cerca de 5 anos. Observe que a altura mínima do teto necessária para o nosso serviço de impressão é de 1,95 metros. Isso garante a exibição adequada e o impacto visual da obra de arte impressa no seu espaço. Para obter a melhor qualidade de impressão possível, recomendamos o uso de imagens com uma resolução de 300 dpi (pontos por polegada) ou superior. Essa resolução mais alta garante detalhes mais nítidos e uma reprodução geral da imagem de melhor qualidade."
             }
         }
+    },
+    "Gallery": {
+        "heading": "",
+        "details": "",
+        "lightbox": {
+            "title": "",
+            "width": "",
+            "height": "",
+            "price": "",
+            "details": ""
+        }
+    },
+    "Order": {
+        "heading": "",
+        "subheading": "",
+        "instructions": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": ""
+        },
+        "form": {
+            "key": "",
+            "email": "",
+            "repeatEmail": "",
+            "button": ""
+        }
+    },
+    "Menu": {
+        "Home": "Home",
+        "Faq": "FAQ",
+        "ContactUs": "Contact Us",
+        "AboutUs": "About Us",
+        "ContactForm": "Message Us",
+        "BecomeOurClient": "Become our client",
+        "Gallery": "Gallery"
     }
 }

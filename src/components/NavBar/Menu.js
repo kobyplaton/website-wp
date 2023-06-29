@@ -3,6 +3,7 @@ import '../../styles/Menu.css'
 import { Link, NavLink, useLocation, useNavigate, useParams, useResolvedPath, useSearchParams } from 'react-router-dom'
 import MenuLink from './MenuLink'
 import { NavContext } from '../../context/NavContext'
+import { useTranslation } from 'react-i18next'
 
 function Menu({ showMenu, toggleMenu }) {
 
@@ -11,6 +12,7 @@ function Menu({ showMenu, toggleMenu }) {
   const resolvedPath = useResolvedPath()
   const navigate = useNavigate()
   const [section, setSection] = useState()
+  const {t} = useTranslation('common')
 
   const directTo = (path, ref) => {
     if (currentPage.current !== getCurrentPage(path)) {
@@ -84,25 +86,25 @@ function Menu({ showMenu, toggleMenu }) {
     <div className={`menu ${showMenu ? 'show-nav' : 'hide'}`}>
         <div className="menu-content">
             <MenuLink path={"/home"} directTo={directTo}>
-              Home
+              {t("Menu.Home")}
             </MenuLink>
             <MenuLink path={"/home/faq"} directTo={directTo} reference={faqRef}>
-              FAQ
+            {t("Menu.Faq")}
             </MenuLink>
             <MenuLink path={"/home/contact-us"} directTo={directTo} reference={contactUsRef}>
-              Contact Us
+            {t("Menu.ContactUs")}
             </MenuLink>
             <MenuLink path={"/home/about-us"} directTo={directTo} reference={aboutUsRef}>
-              About Us
+            {t("Menu.AboutUs")}
             </MenuLink>
             <MenuLink path={"/home/message-us"} directTo={directTo} reference={messageUsRef}>
-              Message Us
+            {t("Menu.ContactForm")}
             </MenuLink>
             <MenuLink path={"/gallery"} directTo={directTo}>
-              Gallery
+            {t("Menu.Gallery")}
             </MenuLink>
-            <MenuLink path={"/order"} directTo={directTo}>
-              Order
+            <MenuLink path={"/become-our-client"} directTo={directTo}>
+            {t("Menu.BecomeOurClient")}
             </MenuLink>
         </div>
     </div>

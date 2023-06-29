@@ -9,16 +9,22 @@ import { Accordion, Button } from 'react-bootstrap'
 
 
 function Admin() {
-    const [email, setEmail] = useState('')
+    const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
     const [verified, setVerified] = useState(false)
+    const [incorrect, toggleIncorrect] = useState(false)
 
     const loginVerification = (e) => {
         e.preventDefault()
-        if (email == 'here' && password == '123') {
+        if (login == process.env.REACT_APP_ADMIN_LOGIN && password == process.env.REACT_APP_ADMIN_PASSWORD) {
             setVerified(true)
-            setEmail('');
+            setLogin('');
             setPassword('');
+            toggleIncorrect(false)
+        } else {
+            setLogin('');
+            setPassword('');
+            toggleIncorrect(true)
         }
     }
      
@@ -28,8 +34,8 @@ function Admin() {
         {!verified &&
         <form className="login-form mx-auto">
             <div className="form-group">
-                <label className='mb-2' htmlFor="email">Email:</label>
-                <input className='form-control' name='email' onChange={(e) => setEmail(e.target.value)} value={email} type="email" placeholder='email' />
+                <label className='mb-2' htmlFor="login">Login:</label>
+                <input className='form-control' name='login' onChange={(e) => setLogin(e.target.value)} value={login} type="text" placeholder='login' />
             </div>
             <div className="form-group">
                 <label className='mb-2' htmlFor="password">Password:</label>
@@ -38,6 +44,9 @@ function Admin() {
             <div className="form-group">
                 <Button type='submit' onClick={(e) => loginVerification(e)}>login</Button>
             </div>
+            {incorrect && <div
+            style={{color: 'red'}}
+            >Incorrect login or password!</div>}
         </form>
         }
         {verified &&

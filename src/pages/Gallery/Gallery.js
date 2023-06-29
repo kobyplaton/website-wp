@@ -12,16 +12,17 @@ import { getCollectionItems } from '../../firebase/firestore'
 import { getImageList, getImages } from '../../firebase/storage'
 import { Container } from 'react-bootstrap'
 import { useWindowSize } from '@uidotdev/usehooks'
+import { useTranslation } from 'react-i18next'
 
 const useImageSize = () => {
   const {width} = useWindowSize()
 
   if (width < 700) {
-    return {width: 250, height: 250}
-  } else if (width > 700 && width < 1200) {
-    return {width: 400, height: 400}
+    return 250
+  } else if (width > 700 && width < 1400) {
+    return 400
   } else {
-    return {width: 400, height: 400}
+    return 500
   }
 }
 
@@ -31,8 +32,9 @@ function Gallery() {
   const [imageDetails, setImageDetails] = useState([])
   const [slides, setSlides] = useState([])
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
-  
-  const {width, height} = useImageSize()
+  const {t} = useTranslation('common')
+
+  const optimalLength = useImageSize()
 
   const handleImageClick = (index) => {
     setCurrentSlideIndex(index);
@@ -49,8 +51,7 @@ function Gallery() {
   }, [])
 
   useEffect(() => {
-    // console.log('imageList - ', imageList)
-    // console.log('imageDetails - ', imageDetails)
+
     let slidesArr = [];
 
     for (let image of imageList) {
@@ -64,7 +65,7 @@ function Gallery() {
   }, [imageList, imageDetails])
 
   return (
-    <Page hero={"Gallery"}>
+    <Page hero={t("Gallery.heading")}>
       <div className="gallery mt-5 flex-fill flex-wrap">
         <Lightbox
           render={{
@@ -75,7 +76,7 @@ function Gallery() {
           close={() => setOpenLightbox(false)}
           slides={slides} />
         {imageList.map((image, index) => 
-          <GalleryImage onClick={handleImageClick} index={index} key={nanoid()} src={image.src} width={width} height={height} />
+          <GalleryImage onClick={handleImageClick} index={index} key={nanoid()} src={image.src} optimalLength={optimalLength} />
         )}
       </div>
     </Page> 

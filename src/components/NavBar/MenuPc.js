@@ -116,8 +116,8 @@ function MenuPc() {
                 </NavLink>
             </Dropdown.Item>
             <Dropdown.Item>
-                <NavLink className={'menu-pc-link'} onClick={() => directTo("/order")}>
-                Order
+                <NavLink className={'menu-pc-link'} onClick={() => directTo("/become-our-client")}>
+                Become Our Client
                 </NavLink>
             </Dropdown.Item>
         </Dropdown.Menu>

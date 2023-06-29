@@ -6,6 +6,67 @@
             "text": "This video shows how we create our desins and bring them to your wall!",
             "button": "Get Started"
         },
+        "ContactUs": {
+            "heading": "Contact Us",
+            "icon1": "Our office, Faro",
+            "icon2": "Parking Near By"
+        },
+        "AboutUs": {
+            "heading": "About Us",
+            "section1": {
+                "text": "We are your premier, one-stop custom vertical print solution that proudly serves your area. If you’re searching for a high-quality wall printer with helpful, professional experts, look no further. We’ll work with you every step of the way to exceed your expectations!",
+                "bullet1": "",
+                "bullet2": "",
+                "bullet3": "",
+                "bullet4": ""
+            },
+            "section2": "Do you wish your walls had a fresh new look? Do you dislike peel-and-stick wall art or traditional wallpaper murals for their lack of character?",
+            "section3": "You want your designs to be both easy on the budget and eye-catching, vibrant, and high-definition digital quality as your preferences change. Perhaps it’s time to change perspectives. Wall prints allow you to make considerable design changes without breaking the bank."
+        },
+        "WallPrinting": {
+            "heading": "How does wall printing work?",
+            "intro": "Wall printing is an exciting new technique that allows custom designs to be directly applied to walls. Here will explore the process of how wall printing works, combining technology, creativity, and craftsmanship to create stunning visual displays.",
+            "conclusion": "After printing, the surface needs time to dry and allow the ink to set properly. This can take a few hours or more. To protect the print, a protective coating or sealant may be applied to make it more durable.",
+            "conclusion1": "Wall printing combines technology and artistry to bring customized designs to life on walls. By understanding the process, we can appreciate the craftsmanship and creativity involved. This innovative technique opens up new possibilities for personalization, branding, and artistic expression in various spaces. As wall printing continues to evolve, it plays a significant role in the world of contemporary art.",
+            "section1": {
+                "heading": "1. Specialized Printing Equipment:",
+                "text": "Wall printing starts with special printers designed specifically for this purpose. These advanced printers ensure accurate and high-quality image reproduction."
+            },
+            "section2": {
+                "heading": "2. Surface Preparation:",
+                "text": "Before printing, the wall surface is carefully prepared by cleaning off any dust or dirt. Sometimes, a primer or base coat is applied to help the print adhere better and achieve the best results."
+            },
+            "section3": {
+                "heading": "3. Digital Image Processing:",
+                "text": "The desired design or image is digitally processed and adjusted to fit the printer's requirements. This ensures the image will be printed correctly on the wall."
+            },
+            "section4": {
+                "heading": "4. Alignment and Calibration:",
+                "text": "The printer uses alignment and calibration systems to position the printing head accurately. This ensures that the design is printed in the right place on the wall."
+            },
+            "section5": {
+                "heading": "5. Ink Application:",
+                "text": "Special inks are used for wall printing to ensure they adhere well to different wall materials and withstand environmental factors. The printer applies the ink in layers, building up the image with precise detail and colours."
+            },
+            "section6": {
+                "heading": "6. Preservation of Wall Texture:",
+                "text": "An important aspect of wall printing is preserving the wall's original texture. The ink is applied in a way that respects and maintains the unique feel of the wall, so it doesn't change its texture."
+            },
+            "section7": {
+                "heading": "7. Drying and Finishing:",
+                "text": "After printing, the surface needs time to dry and allow the ink to set properly. This can take a few hours or more. To protect the print, a protective coating or sealant may be applied to make it more durable."
+            }
+        },
+        "ContactForm": {
+            "heading": "Message Us And We'll Reply Within 48 Hours",
+            "name": "Your name",
+            "email": "Email",
+            "message": "Your message",
+            "button": "Send a message",
+            "recieved": "Email Recieved",
+            "error": "Oops, something went wrong, try again later!"
+        },
+
         "Faq": {
             "Question0": {
                 "question": "What is wall printing?",
@@ -40,5 +101,45 @@
                 "answer": "Images can be printed for both indoor and outdoor applications. When displayed indoors, the colours of the printed images are expected to maintain their quality for approximately 10 years. For outdoor installations, the colour durability is estimated at around 5 years. Please note that the minimum ceiling height required for our printing service is 1.95 meters. This ensures the proper display and visual impact of the printed artwork within your space. To achieve the best possible print quality, we recommend using images with a resolution of 300 dpi (dots per inch) or higher. This higher resolution ensures sharper details and better overall image reproduction."
             }
         }
+    },
+    "Gallery": {
+        "heading": "Gallery",
+        "details": "Details",
+        "lightbox": {
+            "title": "Title:",
+            "width": "Width:",
+            "height": "Height:",
+            "price": "Price Approximation:",
+            "details": "Extra Details:"
+        }
+    },
+    "Order": {
+        "heading": "Become our client",
+        "subheading": "",
+        "verified": "",
+        "wrongMsg": "",
+        "instructions": {
+            "1": "Look through our gallery to get an idea of the design you want",
+            "2": "At our office to get a unique client key",
+            "3": "Complete the form Bellow",
+            "4": "Wait for our email",
+            "5": "Come to our office to see wall printing in real life"
+        },
+        "form": {
+            "key": "Customer Key",
+            "email": "Email",
+            "repeatEmail": "Repeat Email Address",
+            "emailMsg": "We'll never share your email with anyone else.",
+            "button": "Verify"
+        }
+    },
+    "Menu": {
+        "Home": "Home",
+        "Faq": "FAQ",
+        "ContactUs": "Contact Us",
+        "AboutUs": "About Us",
+        "ContactForm": "Message Us",
+        "BecomeOurClient": "Become our client",
+        "Gallery": "Gallery"
     }
 }

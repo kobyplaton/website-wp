@@ -10,9 +10,11 @@ import { createProcess, deleteKeyFromDb, verifyKey } from './keyLogick'
 import { recieveProcessMail, sendProcessMailToUser } from './mailLogick'
 import { Button } from 'react-bootstrap'
 import PageText from '../../components/PageText'
+import { useTranslation } from 'react-i18next'
 
 function OrderInstruction() {
 
+  const {t} = useTranslation('common')
   const [validationMsg, setValidationMsg] = useState('')
   const [verified, setVerified] = useState()
   const [toggleVerifiedMsg, setToggleVerifiedMsg] = useState()
@@ -59,32 +61,33 @@ function OrderInstruction() {
   }
 
   return (
-    <Page hero={"Create an Order"}>
+    <Page hero={t("Order.heading")}>
         <Section>
           <PageText heading={'Instructions'} textAlign='start'>
             <ol className="instruction-list d-flex flex-column ">
-                <li className="instruction">Look through our gallery to get an idea of the design you want 🌇</li>
-                <li className="instruction">Come to our office to get a unique client key 🚗</li>
-                <li className="instruction">Complete the form Bellow 🔑</li>
-                <li className="instruction">Wait for our email ✉️</li>
+                <li className="instruction">{t("Order.instructions.1")} 🌇</li>
+                <li className="instruction">{t("Order.instructions.5")} 🚗</li>
+                <li className="instruction">{t("Order.instructions.2")} 🔑</li>
+                <li className="instruction">{t("Order.instructions.3")} ✍️</li>
+                <li className="instruction">{t("Order.instructions.4")} ✉️</li>
             </ol>
           </PageText>
             <form ref={formRef} className='d-flex flex-column mt-5'>
               <div className="form-group mb-3">
-                <label for="keyInput">Client Key</label>
+                <label for="keyInput">{t("Order.form.key")}</label>
                 <input className='form-control' ref={keyRef} name='keyInput' placeholder='XXXX-XXXX-XXXX'></input>
               </div>
               <div className="form-group mb-3">
-                <label for="email">Email address</label>
+                <label for="email">{t("Order.form.email")}</label>
                 <input className='form-control' ref={emailRef} name='email' placeholder='email' type="email" />
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" class="form-text text-muted">{t("Order.form.emailMsg")}</small>
               </div>
               <div className="form-group mb-3">
-                <label for="emailRepeat">Repeat Email address</label>
+                <label for="emailRepeat">{t("Order.form.repeatEmail")}</label>
                 <input className='form-control' ref={confirmEmailRef} name='emailRepeat' placeholder='repeat email' type="email" required={true} />
               </div>
               <div className="form-group mb-3">
-                <Button type='submit' onClick={(e) => handleSubmit(e)}>Verify</Button>
+                <Button type='submit' onClick={(e) => handleSubmit(e)}>{t("Order.form.button")}</Button>
               </div>
             </form>
             {toggleVerifiedMsg && 

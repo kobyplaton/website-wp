@@ -32,9 +32,9 @@ function HeroSection({ dark = false }) {
     const size = useWindowSize()
   return (
     <Section dark={dark}>
-        <PageText heading={t('Home.Hero.heading')}>This video shows how we create our designs and bring them to your wall!</PageText>
-        <ReactPlayer width={size.width > 700 ? videoSize.big.width : videoSize.small.width} height={size.width > 700 ? videoSize.big.height : videoSize.small.height} url="https://www.youtube.com/watch?v=dSFQRsKCmRw&pp=ygUbcHJpbnQgb24geW91ciB3YWxsIHRyYWlubGVy" />
-        <Button className={size.width > 700 ? buttonBig : buttonSmall} size='md' onClick={() => navigate('/order')}>Get Started</Button>
+        <PageText heading={t('Home.Hero.heading')}>{t('Home.Hero.text')}</PageText>
+        <ReactPlayer width={size.width > 700 ? videoSize.big.width : videoSize.small.width} height={size.width > 700 ? videoSize.big.height : videoSize.small.height} url="https://www.youtube.com/watch?v=Bti7XjsrNSg" />
+        <Button className={size.width > 700 ? buttonBig : buttonSmall} size='md' onClick={() => navigate('/order')}>{t('Home.Hero.button')}</Button>
     </Section>
   )
 }

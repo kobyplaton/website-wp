@@ -6,7 +6,8 @@ import { NavContext } from "../context/NavContext";
 import emailjs from '@emailjs/browser'
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useWindowSize } from "@uidotdev/usehooks";
-import img from '../styles/images/bkg2.jpeg'
+import img from '../styles/images/office-bkg-hq-2.png'
+import { useTranslation } from "react-i18next";
 
 const classesBig = 'px-5'
 const classesSmall = 'px-3'
@@ -19,7 +20,7 @@ const ImagesIfSizeIsBig = () => {
     style={{overflow: 'hidden'}}
     >
         <img
-         width={1000} height={700} src={img} />
+         width={700} height={700} src={img} />
         {/* <img
          className="p-absolute" width={400} height={400} src={img} /> */}
       </div>
@@ -32,6 +33,7 @@ function ContactForm({dark = false , black = false}) {
   const [messageColor, setMessageColor] = useState()
   const formRef = useRef()
   const {width} = useWindowSize()
+  const {t} = useTranslation('common')
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -39,16 +41,16 @@ function ContactForm({dark = false , black = false}) {
     emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_FROM_USER_TEMPLATE_ID, formRef.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
     .then(res => {
       if (res.status === 200) {
-        setEmailRecievedStatusMsg('Email Recieved!')
+        setEmailRecievedStatusMsg(t("Home.ContactForm.recieved"))
         setMessageColor('green')
       }
       if (res.status !== 200) {
-        setEmailRecievedStatusMsg('Oops, something went wrong, try again later!')
+        setEmailRecievedStatusMsg(t("Home.ContactForm.recieved"))
         setMessageColor('red')
       }
       
     })
-    .catch(e => console.error('Something went wrong when sending message, ', e))
+    .catch(e => console.error(t("Home.ContactForm.recieved"), e))
 
   };
 
@@ -73,13 +75,13 @@ function ContactForm({dark = false , black = false}) {
         md={{span: 8}} 
         xl={{span: 6}}
         >
-          <PageText heading={'Message us and we\'ll reply within 48 hours'} />
+          <PageText heading={t("Home.ContactForm.heading")} />
           <form ref={formRef} className={`contact-form ${width > 1200 ? classesBig : classesSmall}`}
             onSubmit={(e) => handleSubmit(e)}>
             <div className="form-input">
               <input className="input"
                 type="text"
-                placeholder="Your name"
+                placeholder={t("Home.ContactForm.name")}
                 name="from_name"
                 required
                 />
@@ -87,14 +89,14 @@ function ContactForm({dark = false , black = false}) {
             <div className="form-input">
               <input className="input"
                 type="email"
-                placeholder="Email"
+                placeholder={t("Home.ContactForm.email")}
                 name="from_email"
                 required
                 />
             </div>
             <div className="form-input">
               <textarea className="textarea"
-                placeholder="Your message"
+                placeholder={t("Home.ContactForm.message")}
                 name="message"
                 required
                 />
@@ -103,7 +105,7 @@ function ContactForm({dark = false , black = false}) {
               <Button className="form-button mb-4"
                 type="submit"
                 >
-                Send a message
+                {t("Home.ContactForm.button")}
               </Button>
               <div style={{color: `${messageColor}`}} className="response-message">
                 {emailRecievedStatusMsg}
@@ -111,12 +113,6 @@ function ContactForm({dark = false , black = false}) {
             </div>
           </form>
         </Col>
-        {/* {width > 700 && width < 1200 
-        && <Col
-        md={{span: 4}}
-        l={{span: 4}}
-        ></Col>
-        } */}
         {width > 1200
         && <Col
         xl={{span: 6}}

@@ -6,6 +6,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import img from './img2.jpg'
 import { AiOutlineNumber } from 'react-icons/ai'
 import { useWindowSize } from '@uidotdev/usehooks'
+import { useTranslation } from 'react-i18next'
 
 const useImageSize = () => {
 
@@ -27,33 +28,35 @@ const InputIcon = () => {
 
 function AboutUsSection({dark = false}) {
 
+  const {t} = useTranslation('common')
+
   const {width, height, windowWidth} = useImageSize()
   const {aboutUsRef} = useContext(NavContext)
 
   return (
     <Section dark={dark} sectionRef={aboutUsRef} >
-        <PageText heading='About Us'>
+        <PageText heading={t("Home.AboutUs.heading")}>
           {/* <Container> */}
             <Row>
               {/* <Col></Col> */}
               <Col >
                 <div className='text-align-start'>
                   <InputIcon />
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate quisquam autem tempora in illo omnis eum voluptates? Aperiam, tenetur dolores.
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                  </ul>
+                  {t("Home.AboutUs.section1.text")}
+                  {/* <ul>
+                    <li>{t("Home.AboutUs.section1.bullet1")}</li>
+                    <li>{t("Home.AboutUs.section1.bullet2")}</li>
+                    <li>{t("Home.AboutUs.section1.bullet3")}</li>
+                    <li>{t("Home.AboutUs.section1.bullet4")}</li>
+                  </ul> */}
                 </div>
                 <p className='text-align-start'>
                   <InputIcon />
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sunt recusandae facere asperiores voluptas eaque debitis accusamus magni ducimus? Incidunt maxime eaque id tempora ratione debitis praesentium, modi aspernatur? Maiores.
+                  {t("Home.AboutUs.section2")}
                 </p>
                 <p className='text-align-start'>
                   <InputIcon />
-                 ccusamus magni ducimus? Incidunt maxime eaque id tempora ratione debitis praesentium, modi aspernatur? Maiores.
+                  {t("Home.AboutUs.section3")}
                 </p>
               </Col>
               {windowWidth > 1200 &&
@@ -62,7 +65,8 @@ function AboutUsSection({dark = false}) {
               </Col>
               }
             </Row>
-          {/* </Container> */}
+            
+         {/* </Container> */}
             </PageText> 
     </Section>
   )
