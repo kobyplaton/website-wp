@@ -3,10 +3,12 @@ import { Dropdown } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { BsGlobe2 } from 'react-icons/bs'
 import { savePreferedLanguage } from '../../extras/localStorageFuncs'
+import { useWindowSize } from '@uidotdev/usehooks'
 
 function LangDropDown() {
 
     const [engToggle, setEngToggle] = useState()
+    const {width} = useWindowSize()
 
     const [t, i18n] = useTranslation('common')
 
@@ -30,11 +32,32 @@ function LangDropDown() {
     }, [i18n.language])
 
   return (
-   <div className='nav-lang'>
-    <div onClick={switchToEnglish} className={`lang-el ${engToggle && 'lang-chosen'}`}>EN</div>
-    <div className="vertical-line"></div>
-    <div onClick={switchToPortuguese} className={`lang-el ${!engToggle && 'lang-chosen'}`}>PT</div>
-   </div>
+    <>
+        {width > 500
+
+        ? <div className='nav-lang'>
+        <div onClick={switchToEnglish} className={`lang-el ${engToggle && 'lang-chosen'}`}>EN</div>
+        <div className="vertical-line"></div>
+        <div onClick={switchToPortuguese} className={`lang-el ${!engToggle && 'lang-chosen'}`}>PT</div>
+        </div>
+
+        : <Dropdown drop='none'>
+                <Dropdown.Toggle 
+                style={{
+                all: 'unset',
+                
+            }}
+            >
+                <BsGlobe2 size={23} />
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                    <Dropdown.Item onClick={switchToEnglish}>English</Dropdown.Item>
+                    <Dropdown.Item onClick={switchToPortuguese}>Portuguese</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
+        } 
+    </>
   )
 }
 
