@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useState } from 'react'
 import Section from '../../../components/Section'
 import Loading from '../../../components/Loading'
+import { Button } from 'react-bootstrap'
 
 function ManageProcessesSection() {
     const ManageProcesses = lazy(() => import('./ManageProcesses.js'))
@@ -14,7 +15,7 @@ function ManageProcessesSection() {
 
   return (
     <Section>
-        <button onClick={viewSection}>Load Current Processes</button>
+        <Button className='my-4' onClick={viewSection}>Load Current Processes</Button>
         {sectionView &&
         <Suspense fallback={<Loading />}>
 

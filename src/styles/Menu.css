@@ -16,6 +16,7 @@
     overflow: hidden;
     width: 100%;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;;
@@ -27,9 +28,9 @@
     color: var(--color-black);
 }
 
-.show {
+.show-nav {
     visibility: visible;
-    height: 580px;
+    height: 400px;
 }
 
 .hide {
@@ -37,7 +38,14 @@
     height: 0;
 }
 
-.selected {
-    color: var(--color-blue);
+.menu-link {
     text-decoration: none;
+    color: var(--color-blue);
+    font-size: 32px;
+}
+
+.menu-pc-link {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--color-blue);
 }

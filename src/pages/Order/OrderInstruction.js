@@ -4,9 +4,12 @@ import Section from '../../components/Section'
 import { getDbFile } from '../../firebase/firestore'
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
 import { db } from '../../firebase/firebase_config'
+import '../../styles/OrderInstruction.css'
 
 import { createProcess, deleteKeyFromDb, verifyKey } from './keyLogick'
 import { recieveProcessMail, sendProcessMailToUser } from './mailLogick'
+import { Button } from 'react-bootstrap'
+import PageText from '../../components/PageText'
 
 function OrderInstruction() {
 
@@ -58,27 +61,41 @@ function OrderInstruction() {
   return (
     <Page hero={"Create an Order"}>
         <Section>
-            <ol className="instruction-list">
+          <PageText heading={'Instructions'} textAlign='start'>
+            <ol className="instruction-list d-flex flex-column ">
                 <li className="instruction">Look through our gallery to get an idea of the design you want 🌇</li>
                 <li className="instruction">Come to our office to get a unique client key 🚗</li>
-                <li className="instruction">Put the code in the input Bellow 🔑</li>
+                <li className="instruction">Complete the form Bellow 🔑</li>
                 <li className="instruction">Wait for our email ✉️</li>
             </ol>
-            <form ref={formRef}>
-              <input ref={keyRef} placeholder='XXXX-XXXX-XXXX'></input>
-              <input ref={emailRef} placeholder='email' type="email" />
-              <input ref={confirmEmailRef} placeholder='repeat email' type="email" required={true} />
-              <button type='submit' onClick={(e) => handleSubmit(e)}>Verify</button>
+          </PageText>
+            <form ref={formRef} className='d-flex flex-column mt-5'>
+              <div className="form-group mb-3">
+                <label for="keyInput">Client Key</label>
+                <input className='form-control' ref={keyRef} name='keyInput' placeholder='XXXX-XXXX-XXXX'></input>
+              </div>
+              <div className="form-group mb-3">
+                <label for="email">Email address</label>
+                <input className='form-control' ref={emailRef} name='email' placeholder='email' type="email" />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div className="form-group mb-3">
+                <label for="emailRepeat">Repeat Email address</label>
+                <input className='form-control' ref={confirmEmailRef} name='emailRepeat' placeholder='repeat email' type="email" required={true} />
+              </div>
+              <div className="form-group mb-3">
+                <Button type='submit' onClick={(e) => handleSubmit(e)}>Verify</Button>
+              </div>
             </form>
             {toggleVerifiedMsg && 
-            <div className="verification-msg">
+            <div className="verification-msg mb-5">
               {verified 
                 ? <p style={{color: 'green'}}>Verified!</p>
                 : <p style={{color: 'orange'}}>Wrong Key, Check Capitalization</p>
               }
             </div>
             }
-            <div>{validationMsg}</div>
+            <div style={{minHeight:'100px'}}>{validationMsg}</div>
 
 
         </Section>

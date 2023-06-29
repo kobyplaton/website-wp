@@ -1,0 +1,13 @@
+.hero-bkg {
+    background-image: url(../../public/bkg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat ;
+}
+
+.side-bkg {
+    background-image: url(../../public/bkg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat ;
+}

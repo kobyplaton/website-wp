@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
+import { Button } from 'react-bootstrap';
 
-function UploadImage({ image, uploadImageToDb }) {
+function UploadImage({ image, uploadImageToDb, setImagesUploaded }) {
 
     const {title, width, height, price, details} = image;
     const titleRef = useRef(title)
@@ -19,22 +20,37 @@ function UploadImage({ image, uploadImageToDb }) {
           price: priceRef.current.value,
           details: detailsRef.current.value,
         })
+        setImagesUploaded((prev) => prev.filter((current) => current.id !== image.id))
     }
 
   return (
     <div key={image.id} className="image-profile">
         <img src={URL.createObjectURL(image.imageFile)} width={250} height={250} />
         <form name='details-form'>
-          <label htmlFor='title'>Title:</label>
-          <input ref={titleRef} type="text" name="title" /><br />
-          <label htmlFor='width'>Width:</label>
-          <input ref={widthRef} type="text" name="width" /><br />
-          <label htmlFor="height">Height:</label>
-          <input ref={heightRef} type="text" name="height" /><br />
-          <label htmlFor="price">Price:</label>
-          <input ref={priceRef} type="text" name="price" /><br />
-          <textarea form='details-form' ref={detailsRef} name={image.id} placeholder='Extra details' cols="30" rows="5"></textarea>
-          <button type='submit' form='details-form' onClick={handleClick}>Upload</button>
+          <div className="form-group">
+            <label htmlFor='title'>Title:</label>
+            <input className='form-control' ref={titleRef} type="text" name="title" />
+          </div>
+          <div className="form-group">
+            <label htmlFor='width'>Width:</label>
+            <input className='form-control' ref={widthRef} type="text" name="width" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="height">Height:</label>
+            <input className='form-control' ref={heightRef} type="text" name="height" /><br />
+          </div>
+          <div className="form-group">
+            <label htmlFor="price">Price:</label>
+            <input className='form-control' ref={priceRef} type="text" name="price" /><br />
+          </div>
+          <div className="form-group">
+            <textarea className='form-control' form='details-form' ref={detailsRef} name={image.id} placeholder='Extra details' cols="30" rows="5"></textarea>
+          </div>
+          <div className="form-group mt-3">
+            <Button type='submit' form='details-form' onClick={handleClick}>Upload</Button>
+          </div>
+          
+          
         </form>
     </div>
   )

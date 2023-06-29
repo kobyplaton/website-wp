@@ -41,7 +41,7 @@ function useSlides() {
   //   console.log('slides - ', slides)
   // }, [imageList, imageDetails, slides])
 
-  return slides
+  return [slides, setSlides]
 }
 
 export default useSlides

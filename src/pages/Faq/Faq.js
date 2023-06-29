@@ -11,7 +11,7 @@ function Faq() {
   const questions = useQuestions()
 
   return (
-    <div ref={faqRef} className='faq'>
+    <div ref={faqRef} className='faq mb-5'>
       {questions.map(({question, answer}, index) => {
         return (
 

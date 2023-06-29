@@ -4,11 +4,12 @@ import Gallery from './pages/Gallery/Gallery'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Admin from './pages/Admin/Admin'
 import ContactForm from './sections/ContactForm'
-import AboutUsSection from './sections/AboutUsSection'
+import AboutUsSection from './sections/AboutUsSection/AboutUsSection'
 import FaqSection from './sections/FaqSection'
 import ContactUs from './pages/ContactUs'
 import OrderInstruction from './pages/Order/OrderInstruction'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/Fonts.css'
 
 const router = createBrowserRouter([
   {
@@ -57,11 +58,3 @@ function App() {
 
 export default App
 
-//TODO: Finish lightbox
-//TODO: maps link
-
-//TODO: language translation
-//TODO: email sending
-//TODO: implement bootstrap
-
-//TODO: admin panel home page modifications

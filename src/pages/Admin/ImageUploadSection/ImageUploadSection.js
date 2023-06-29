@@ -11,9 +11,12 @@ function ImageUploadSection() {
 
   const uploadImageToDb = (image) => {
     const {id, imageFile} = image
-    uploadImageToStorage({id, imageFile})
+    const imageUploaded = uploadImageToStorage({id, imageFile})
     delete image.imageFile
-    setDbFile('gallery_images', id, image)
+    const fileUploaded = setDbFile('gallery_images', id, image)
+    if (imageUploaded && fileUploaded) {
+      alert("Image Uploaded")
+    }
   }
 
   const handleImageUpload = (e) => {
@@ -29,8 +32,9 @@ function ImageUploadSection() {
   return (
     <Section>
       <div className='image-upload-table'>
-            <div className="inputs">
+            <div className="custom-file">
                 <input
+                    className='custom-file-input'
                     type='file'
                     multiple="multiple"
                     onChange={handleImageUpload}
@@ -38,7 +42,7 @@ function ImageUploadSection() {
             </div>
             <div className="image-uploads">
                 {imagesUploaded.map(image => (
-                    <UploadImage image={image} uploadImageToDb={uploadImageToDb} key={nanoid()} />
+                    <UploadImage image={image} setImagesUploaded={setImagesUploaded} uploadImageToDb={uploadImageToDb} key={nanoid()} />
                 ))}
             </div>
         </div>

@@ -7,6 +7,7 @@ import { I18nextProvider } from 'react-i18next';
 import common_en from "./translations/en/common.json"
 import common_pt from "./translations/pt/common.json"
 import { getPreferedLanguage } from './extras/localStorageFuncs';
+import { ThemeProvider } from 'react-bootstrap';
 
 
 i18next.init({
@@ -26,7 +27,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
   <I18nextProvider i18n={i18next}>
-    <App />
+    <ThemeProvider
+      breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+    >
+      <App />
+    </ThemeProvider>
   </I18nextProvider>
   //</React.StrictMode>
 );

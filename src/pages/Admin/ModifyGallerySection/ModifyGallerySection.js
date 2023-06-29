@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useState } from 'react'
 import Section from '../../../components/Section.js'
 import Loading from '../../../components/Loading.js'
+import { Button } from 'react-bootstrap'
 
 function ModifyGallerySection() {
 
@@ -15,7 +16,9 @@ function ModifyGallerySection() {
 
   return (
     <Section>
-        <button onClick={openGallery}>Load Gallery</button>
+        <Button 
+          className='my-5'
+          onClick={openGallery}>Load Gallery</Button>
         {toggleGallery &&
         <Suspense fallback={<Loading />}>
 

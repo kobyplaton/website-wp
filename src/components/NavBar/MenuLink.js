@@ -8,7 +8,7 @@ function MenuLink({ children, path, directTo, reference }) {
     <h1>
         <NavLink
             onClick={() => directTo(path, reference)}
-            className={'selected'}
+            className={'menu-link'}
             >
             {children}
         </NavLink>

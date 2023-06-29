@@ -22,3 +22,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.largest-font {
+  font-size: 90px !important;
+  letter-spacing: 8px;
+  line-height: 100px;
+}

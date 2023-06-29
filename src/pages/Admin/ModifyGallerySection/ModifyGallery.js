@@ -8,16 +8,21 @@ import { setDbFile } from '../../../firebase/firestore'
 
 function ModifyGallery() {
 
-    const slides = useSlides()
+    const [slides, setSlides] = useSlides()
 
     const modifyImageInDb = (image) => {
-      setDbFile('gallery_images', image.id, image)
+      const fileUpdated = setDbFile('gallery_images', image.id, image)
+      if (fileUpdated) {
+        alert("Image Updated")
+      } else {
+        alert("Something went Wrong!")
+      }
     }
 
 
   return (
     <div className="">
-      {slides.map((slide) => <ModifyImage image={slide} modifyImageInDb={modifyImageInDb} key={nanoid()} />)}
+      {slides.map((slide) => <ModifyImage setSlides={setSlides} image={slide} modifyImageInDb={modifyImageInDb} key={nanoid()} />)}
     </div>
   )
 }

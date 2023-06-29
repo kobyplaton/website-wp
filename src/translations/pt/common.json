@@ -1,5 +1,6 @@
 {
     "Home": {
+        "heading": "Imprimimos em suas paredes",
         "Hero": {
             "heading": "Watch Our Introductory Video!",
             "text": "This video shows how we create our desins and bring them to your wall!",
@@ -7,11 +8,11 @@
         },
         "Faq": {
             "Question1": {
-                "question": "something else",
+                "question": "How big can the wall art be?",
                 "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis quibusdam debitis consectetur! Unde voluptas commodi voluptatibus corrupti odit sequi. Eos, nisi? Sint, voluptate minus suscipit obcaecati qui fuga voluptates?"
             },
             "Question2": {
-                "question": "An example of a long question goes here, to see how long questions look",
+                "question": "What colours can be printed?",
                 "answer": "You can get started by clicking the button below!"
             },
             "Question3": {

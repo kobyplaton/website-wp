@@ -1,5 +1,6 @@
 import React from 'react'
 import { deleteDbFile } from '../../../firebase/firestore';
+import { Button, Card } from 'react-bootstrap';
 
 function Process({process, setProcesses}) {
     const {processId, dateStarted} = process;
@@ -10,11 +11,17 @@ function Process({process, setProcesses}) {
     }
 
   return (
-    <div style={{border: 'black 1px solid'}}>
-        <h3>ProcessId: {processId}</h3>
-        <h3>Date Started: {dateStarted}</h3>
-        <button onClick={deleteProcess}>Delete</button>
-    </div>
+    <Card className='mt-2 p-2'>
+        <Card.Body>
+          <Card.Title>
+            Process Id: {processId}
+          </Card.Title>
+          <Card.Text>
+            Date Started: {dateStarted}
+          </Card.Text>
+        <Button onClick={deleteProcess}>Delete</Button>
+        </Card.Body>
+    </Card>
   )
 }
 

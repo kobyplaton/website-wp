@@ -7,6 +7,10 @@ function useQuestions() {
 
     const questions = [
         {
+            question: t('Home.Faq.Question0.question'),
+            answer: t('Home.Faq.Question0.answer')
+        },
+        {
             question: t('Home.Faq.Question1.question'),
             answer: t('Home.Faq.Question1.answer')
         },
@@ -25,6 +29,14 @@ function useQuestions() {
         {
             question: t('Home.Faq.Question5.question'),
             answer: t('Home.Faq.Question5.answer')
+        },
+        {
+            question: t('Home.Faq.Question6.question'),
+            answer: t('Home.Faq.Question6.answer')
+        },
+        {
+            question: t('Home.Faq.Question7.question'),
+            answer: t('Home.Faq.Question7.answer')
         },
     ]
   

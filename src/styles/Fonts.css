@@ -1,0 +1,31 @@
+.font-big {
+    font-size: 54px;
+}
+
+.font-biggest {
+    font-size: 72px;
+}
+
+.font-small {
+    font-size: 24px;
+}
+
+.font-smallest {
+    font-size: 16px;
+}
+
+.font-medium {
+    font-size: 32px;
+}
+
+.font-ms {
+    font-size: 20px;
+}
+
+.font-xxl {
+    font-size: 94px;
+}
+
+.line-height-l {
+    line-height: 3rem;
+}

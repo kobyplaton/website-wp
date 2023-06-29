@@ -1,7 +1,6 @@
 .login-form {
     width: 280px;
     padding: 30px 20px;
-    border: 1px solid grey;
     display: flex;
     align-items: center;
     justify-content: center;

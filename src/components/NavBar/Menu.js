@@ -81,7 +81,7 @@ function Menu({ showMenu, toggleMenu }) {
 
 
   return (
-    <div className={`menu ${showMenu ? 'show' : 'hide'}`}>
+    <div className={`menu ${showMenu ? 'show-nav' : 'hide'}`}>
         <div className="menu-content">
             <MenuLink path={"/home"} directTo={directTo}>
               Home

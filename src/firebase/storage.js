@@ -4,9 +4,12 @@ import { storage } from "./firebase_config"
 export const uploadImageToStorage = async ({id, imageFile}) => {
     const imageRef = ref(storage, `images/${id}`)
     try {
-        await uploadBytes(imageRef, imageFile)
+        const res = await uploadBytes(imageRef, imageFile)
+        if (res.status === 200) return true
+        return false
     } catch (error) {
         console.error('Could not upload Image to Storage, check Storage', error)
+        return false
     }
 }
 

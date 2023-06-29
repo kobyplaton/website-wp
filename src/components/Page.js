@@ -3,6 +3,9 @@ import Nav from './NavBar/Nav'
 import '../styles/Page.css'
 import Hero from '../pages/Hero'
 import { NavContext } from '../context/NavContext'
+import { Col, Container, Row } from 'react-bootstrap'
+import '../styles/Bkgs.css'
+import { useWindowSize } from '@uidotdev/usehooks'
 
 function Page({ children, hero }) {
 
@@ -11,13 +14,52 @@ function Page({ children, hero }) {
   const aboutUsRef = useRef();
   const messageUsRef = useRef();
 
+
   return (
     <NavContext.Provider value={{contactUsRef, faqRef, aboutUsRef, messageUsRef}}>
-      <div className='page'>
+      <Container className='mx-0 mw-100'>
+        <Row>
           <Nav />
-          <Hero text={hero} />
-          {children}
-      </div>
+        </Row>
+        <Row>
+          <Col 
+          sm={{span: 1}} 
+          md={{span: 3}}
+          xl={{span: 2}}
+          ></Col>
+          <Col 
+          sm={{span: 10}} 
+          md={{span: 6}}
+          xl={{span: 8}}
+          >
+            <Hero text={hero}  />
+          </Col>
+          <Col 
+          sm={{span: 1}} 
+          md={{span:3}}
+          xl={{span: 2}}
+          ></Col>
+        </Row>
+        <Row className='flex'>
+          {/* <Col 
+          sm={{span: 1}} 
+          md={{span: 3}}
+          xl={{span: 2}}
+          ></Col> */}
+          {/* <Col 
+          sm={{span: 10}} 
+          md={{span: 6}} 
+          xl={{span: 8}}
+         className='px-0'> */}
+            {children}
+          {/* </Col> */}
+          {/* <Col 
+          sm={{span: 1}}
+          md={{span: 3}}
+          xl={{span: 2}}
+          ></Col> */}
+        </Row>
+      </Container>
     </NavContext.Provider>
   )
 }

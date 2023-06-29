@@ -1,6 +1,5 @@
 .gallery {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -9,8 +8,7 @@
 .gallery-image {
     cursor: zoom-in;
     background-color: grey;
-    width: 250px;
-    height: 250px;
+    
 }
 
 .gallery-image > img {
@@ -60,5 +58,5 @@
 .lightbox-image {
     width: 350;
     height: 350;
-    overflow: auto;
+    
 }

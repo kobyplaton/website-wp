@@ -1,0 +1,22 @@
+.subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 1rem;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.subsection > h3 {
+    font-weight: 300;
+    color: rgb(41, 93, 207);
+    text-align: start;
+}
+
+.subsection > p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: start;
+    max-width: 40em;
+}
