@@ -29,10 +29,10 @@ function Nav() {
             </div>
             <div className="nav-left">
                 <LangDropDown />
-                {size.width > 700 
+                {/* {size.width > 700 
                 ? <MenuPc />
                 : <AiOutlineMenu size={iconSize} onClick={() => setToggleMenu((prev) => !prev)} />
-                }
+                } */}
             </div>
         </div>
         {size.width < 700 &&

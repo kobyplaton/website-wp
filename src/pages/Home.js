@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Page from '../components/Page'
 import '../styles/Home.css'
 import Divider from '../components/Divider'
@@ -13,7 +13,7 @@ import WallPrintingSection from '../sections/WallPrintingSection'
 
 function Home() {
 
-  const {t, i18n} = useTranslation('common')
+  const {t} = useTranslation('common')
 
   return (
     <div className='w-100'>

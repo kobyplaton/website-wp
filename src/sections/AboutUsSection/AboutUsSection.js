@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Section from '../../components/Section'
 import PageText from '../../components/PageText'
 import { NavContext } from '../../context/NavContext'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import img from './img2.jpg'
 import { AiOutlineNumber } from 'react-icons/ai'
 import { useWindowSize } from '@uidotdev/usehooks'
@@ -61,7 +61,7 @@ function AboutUsSection({dark = false}) {
               </Col>
               {windowWidth > 1200 &&
               <Col>
-                <img width={width} height={height} src={img}></img>
+                <img width={width} height={height} src={img} alt=''></img>
               </Col>
               }
             </Row>

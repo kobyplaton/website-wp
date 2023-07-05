@@ -1,4 +1,4 @@
-import { customAlphabet, nanoid } from "nanoid"
+import { customAlphabet } from "nanoid"
 import { deleteDbFile, getDbFile, setDbFile } from "../../firebase/firestore";
 // import { addToDb } from "../../firebase/firestore";
 

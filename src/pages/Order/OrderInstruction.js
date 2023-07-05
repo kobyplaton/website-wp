@@ -1,11 +1,7 @@
 import React, { useRef, useState } from 'react'
 import Page from '../../components/Page'
 import Section from '../../components/Section'
-import { getDbFile } from '../../firebase/firestore'
-import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
-import { db } from '../../firebase/firebase_config'
 import '../../styles/OrderInstruction.css'
-
 import { createProcess, deleteKeyFromDb, verifyKey } from './keyLogick'
 import { recieveProcessMail, sendProcessMailToUser } from './mailLogick'
 import { Button } from 'react-bootstrap'
@@ -23,10 +19,7 @@ function OrderInstruction() {
   const confirmEmailRef = useRef()
   const formRef = useRef()
 
-  const templateParams = {
-    message: "Request Verified, we will contact you soon!",
-    // to_email: emailRef.current.value
-  }
+
 
   const handleSubmit = async (e) => {
     e.preventDefault()

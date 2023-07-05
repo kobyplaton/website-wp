@@ -20,7 +20,7 @@ const ImagesIfSizeIsBig = () => {
     style={{overflow: 'hidden'}}
     >
         <img
-         width={700} height={700} src={img} />
+         width={700} height={700} src={img} alt="" />
         {/* <img
          className="p-absolute" width={400} height={400} src={img} /> */}
       </div>

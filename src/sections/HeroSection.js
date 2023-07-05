@@ -1,11 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Section from '../components/Section'
 import PageText from '../components/PageText'
 import ReactPlayer from 'react-player'
-// import Button from '../components/Button'
-import Divider from '../components/Divider'
-import Hero from '../pages/Hero'
-import { NavContext } from '../context/NavContext'
 import { useTranslation } from 'react-i18next'
 import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom'
@@ -27,7 +23,7 @@ const buttonSmall = 'my-5 w-35'
 const buttonBig = 'my-5 w-45'
 
 function HeroSection({ dark = false }) {
-    const {t, i18n} = useTranslation('common')
+    const {t} = useTranslation('common')
     const navigate = useNavigate()
     const size = useWindowSize()
   return (

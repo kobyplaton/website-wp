@@ -33,30 +33,11 @@ function LangDropDown() {
 
   return (
     <>
-        {width > 500
-
-        ? <div className='nav-lang'>
-        <div onClick={switchToEnglish} className={`lang-el ${engToggle && 'lang-chosen'}`}>EN</div>
+        <div className='nav-lang'>
+        <div onClick={switchToEnglish} className={`lang-el ${engToggle && 'lang-chosen'}`}>{`${width > 500 ? 'English' : 'EN'}`}</div>
         <div className="vertical-line"></div>
-        <div onClick={switchToPortuguese} className={`lang-el ${!engToggle && 'lang-chosen'}`}>PT</div>
+        <div onClick={switchToPortuguese} className={`lang-el ${!engToggle && 'lang-chosen'}`}>{`${width > 500 ? 'Portuguese' : 'PT'}`}</div>
         </div>
-
-        : <Dropdown drop='none'>
-                <Dropdown.Toggle 
-                style={{
-                all: 'unset',
-                
-            }}
-            >
-                <BsGlobe2 size={23} />
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item onClick={switchToEnglish}>English</Dropdown.Item>
-                    <Dropdown.Item onClick={switchToPortuguese}>Portuguese</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-        } 
     </>
   )
 }
