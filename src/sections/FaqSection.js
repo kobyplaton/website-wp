@@ -2,7 +2,6 @@ import React from 'react'
 import Section from '../components/Section'
 import PageText from '../components/PageText'
 import Faq from '../pages/Faq/Faq'
-import Divider from '../components/Divider'
 
 function FaqSection({dark = false}) {
   return (

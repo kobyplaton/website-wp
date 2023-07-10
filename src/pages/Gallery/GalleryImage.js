@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { convertImageSizes } from '../../extras/convertImageSizes'
 import { useTranslation } from 'react-i18next'
 
@@ -23,7 +23,7 @@ function GalleryImage({ src, optimalLength, onClick, index }) {
 
   useEffect(() => {
       setConvertedSizes(convertImageSizes(originalSizes, optimalLength))
-    }, [originalSizes])
+    }, [originalSizes, optimalLength])
     
     useEffect(() => {
       setGalleryImageStyles({width: convertedSizes.width + 'px', height: convertedSizes.height + 'px'})
@@ -39,7 +39,7 @@ function GalleryImage({ src, optimalLength, onClick, index }) {
                     <p>{t("Gallery.details")}</p>
                 </div>
             </div>
-            <img width={convertedSizes.width} height={convertedSizes.height} src={src} />
+            <img width={convertedSizes.width} height={convertedSizes.height} src={src} alt='' />
     </div>
   )
 }

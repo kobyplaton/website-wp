@@ -1,0 +1,61 @@
+.hero {
+    font-family: 'Tangerine';
+    font-weight: 100;
+    font-size: 46px;
+    text-align: center;
+    padding: 0 10px;
+    animation: fade-in 1s;
+}
+
+.hero-1 {
+    animation: fade-in 500ms;
+}
+.hero-2 {
+    animation: fade-in 500ms;
+    animation-delay: 500ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.hero-3 {
+    animation: fade-in 500ms;
+    animation-delay: 1000ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.hero-4 {
+    animation: fade-in 500ms;
+    animation-delay: 1500ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.subhero {
+    font-family: 'Tangerine';
+    font-size: 80px;
+    text-align: center;
+    animation: fade-in 500ms;
+    animation-delay: 2000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+i {
+    background-color: rgb(233, 230, 230);
+}
+
+
+.hero-section {
+    animation: fade-in 500ms;
+    animation-delay: 2000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

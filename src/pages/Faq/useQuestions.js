@@ -1,9 +1,8 @@
-import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 function useQuestions() {
 
-    const {t, i18n} = useTranslation('common')
+    const {t} = useTranslation('common')
 
     const questions = [
         {

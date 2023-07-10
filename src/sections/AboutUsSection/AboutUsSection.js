@@ -7,6 +7,7 @@ import img from './img2.jpg'
 import { AiOutlineNumber } from 'react-icons/ai'
 import { useWindowSize } from '@uidotdev/usehooks'
 import { useTranslation } from 'react-i18next'
+import '../../styles/AboutUs.css'
 
 const useImageSize = () => {
 
@@ -36,27 +37,30 @@ function AboutUsSection({dark = false}) {
   return (
     <Section dark={dark} sectionRef={aboutUsRef} >
         <PageText heading={t("Home.AboutUs.heading")}>
-          {/* <Container> */}
             <Row>
-              {/* <Col></Col> */}
               <Col >
-                <div className='text-align-start'>
-                  <InputIcon />
-                  {t("Home.AboutUs.section1.text")}
-                  {/* <ul>
-                    <li>{t("Home.AboutUs.section1.bullet1")}</li>
-                    <li>{t("Home.AboutUs.section1.bullet2")}</li>
-                    <li>{t("Home.AboutUs.section1.bullet3")}</li>
-                    <li>{t("Home.AboutUs.section1.bullet4")}</li>
-                  </ul> */}
-                </div>
-                <p className='text-align-start'>
-                  <InputIcon />
+                <p className='about-us-text'>
+                  {t("Home.AboutUs.section1")}
+                </p>
+                <div className="text-divider"></div>
+                  {/* <InputIcon /> */}
+                <p className='about-us-text'>
                   {t("Home.AboutUs.section2")}
                 </p>
-                <p className='text-align-start'>
-                  <InputIcon />
+                <div className="text-divider"></div>
+                  {/* <InputIcon /> */}
+                <p className='about-us-text'>
                   {t("Home.AboutUs.section3")}
+                </p>
+                <div className="text-divider"></div>
+                  {/* <InputIcon /> */}
+                <p className='about-us-text'>
+                  {t("Home.AboutUs.section4")}
+                </p>
+                <div className="text-divider"></div>
+                {/* <InputIcon /> */}
+                <p className='about-us-text'>
+                  {t("Home.AboutUs.section5")}
                 </p>
               </Col>
               {windowWidth > 1200 &&
@@ -65,8 +69,6 @@ function AboutUsSection({dark = false}) {
               </Col>
               }
             </Row>
-            
-         {/* </Container> */}
             </PageText> 
     </Section>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Section.css'
-import { Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 function Section({ children, dark = false, black = false, sectionRef, additionalClasses }) {
 

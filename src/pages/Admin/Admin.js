@@ -16,7 +16,7 @@ function Admin() {
 
     const loginVerification = (e) => {
         e.preventDefault()
-        if (login == process.env.REACT_APP_ADMIN_LOGIN && password == process.env.REACT_APP_ADMIN_PASSWORD) {
+        if (login === process.env.REACT_APP_ADMIN_LOGIN && password === process.env.REACT_APP_ADMIN_PASSWORD) {
             setVerified(true)
             setLogin('');
             setPassword('');

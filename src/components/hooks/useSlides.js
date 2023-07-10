@@ -1,7 +1,5 @@
-import { getDownloadURL, listAll, ref } from 'firebase/storage'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getCollectionItems } from '../../firebase/firestore'
-import { storage } from '../../firebase/firebase_config'
 import { getImageList } from '../../firebase/storage'
 
 function useSlides() {

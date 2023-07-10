@@ -27,7 +27,7 @@ function CustomImage({imageFile}) {
 
 
     return (
-        <img src={URL.createObjectURL(imageFile)} width={convertedSizes.width} height={convertedSizes.height} />
+        <img src={URL.createObjectURL(imageFile)} width={convertedSizes.width} height={convertedSizes.height} alt='' />
     )
 }
 

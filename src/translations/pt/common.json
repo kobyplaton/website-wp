@@ -6,6 +6,7 @@
             "text": "Este vídeo mostra como criamos nossos designs e os levamos até a sua parede!",
             "button": "Começar"
         },
+        "MiniGallery": "Veja Algumas Das nossas Impressões Em Paredes",
         "ContactUs": {
             "heading": "Contact Us",
             "icon1": "Nosso escritório em Faro",
@@ -116,17 +117,18 @@
         "heading": "",
         "subheading": "",
         "instructions": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": ""
+            "1": "Explore a nossa galeria para ter uma ideia do design que deseja",
+            "2": "No nosso escritório, obtenha uma chave de cliente única",
+            "3": "Complete o formulário abaixo",
+            "4": "Aguarde o nosso email",
+            "5": "Venha ao nosso escritório e veja a impressão em paredes na vida real"
         },
         "form": {
-            "key": "",
-            "email": "",
-            "repeatEmail": "",
-            "button": ""
+            "key": "Chave de clienta",
+            "email": "Email",
+            "repeatEmail": "Reapeat Emaol",
+            "emailMsg": "Nunca compartilharemos seu email com mais ninguém.",
+            "button": "Verificar"
         }
     },
     "Menu": {

@@ -6,6 +6,7 @@
             "text": "This video shows how we create our desins and bring them to your wall!",
             "button": "Get Started"
         },
+        "MiniGallery": "Checkout Some Of Our Wall Prints",
         "ContactUs": {
             "heading": "Contact Us",
             "icon1": "Our office, Faro",
@@ -13,15 +14,11 @@
         },
         "AboutUs": {
             "heading": "About Us",
-            "section1": {
-                "text": "We are your premier, one-stop custom vertical print solution that proudly serves your area. If you’re searching for a high-quality wall printer with helpful, professional experts, look no further. We’ll work with you every step of the way to exceed your expectations!",
-                "bullet1": "",
-                "bullet2": "",
-                "bullet3": "",
-                "bullet4": ""
-            },
-            "section2": "Do you wish your walls had a fresh new look? Do you dislike peel-and-stick wall art or traditional wallpaper murals for their lack of character?",
-            "section3": "You want your designs to be both easy on the budget and eye-catching, vibrant, and high-definition digital quality as your preferences change. Perhaps it’s time to change perspectives. Wall prints allow you to make considerable design changes without breaking the bank."
+            "section1": "Welcome to Print On Your Wall™, where walls become art!",
+            "section2": "Step into our physical store and witness the magic of bringing your imagination to life on your walls. While our gallery showcases samples, the possibilities are truly limitless when it comes to transforming your space.",
+            "section3": "We can turn your wildest ideas into reality. Whether it's a breathtaking landscape, a captivating abstract design, or something entirely unique, we have the expertise to make it happen.",
+            "section4": "Using cutting-edge technology and premium materials, we bring your vision to life with precision and quality. Let us create a masterpiece that will leave a lasting impression.",
+            "section5": "Visit us today and unlock the full potential of your walls. Print On Your Wall™ - Where imagination takes center stage."
         },
         "WallPrinting": {
             "heading": "How does wall printing work?",
@@ -120,7 +117,7 @@
         "wrongMsg": "",
         "instructions": {
             "1": "Look through our gallery to get an idea of the design you want",
-            "2": "At our office to get a unique client key",
+            "2": "At our office get a unique client key",
             "3": "Complete the form Bellow",
             "4": "Wait for our email",
             "5": "Come to our office to see wall printing in real life"

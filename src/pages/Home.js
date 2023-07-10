@@ -10,6 +10,7 @@ import ContactForm from '../sections/ContactForm'
 import { useTranslation } from 'react-i18next'
 import { Col } from 'react-bootstrap'
 import WallPrintingSection from '../sections/WallPrintingSection'
+import MiniGallerySection from '../sections/MiniGallery/MiniGallerySection'
 
 function Home() {
 
@@ -31,6 +32,7 @@ function Home() {
           >
             <HeroSection />
             <Divider />
+            <MiniGallerySection />
             <FaqSection />
             <ContactUsSection dark />
             <AboutUsSection />

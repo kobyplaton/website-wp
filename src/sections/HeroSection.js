@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Section from '../components/Section'
 import PageText from '../components/PageText'
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/youtube'
 import { useTranslation } from 'react-i18next'
 import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom'
@@ -9,29 +9,55 @@ import '../styles/Bkgs.css'
 import { useWindowSize } from '@uidotdev/usehooks'
 
 const videoSize = {
-  big: {
+  medium: {
     width: 600,
     height: 300
   },
   small: {
     width: 250,
     height: 150
+  },
+  big: {
+    width: 900,
+    height: 500
   }
 }
 
-const buttonSmall = 'my-5 w-35'
-const buttonBig = 'my-5 w-45'
+const buttonSmall = { margin: '3rem', width: '135px' }
+const buttonMedium = { margin: '3rem', width: '145px' }
+const buttonBig = { margin: '3rem', width: '155px' }
+
+const chooseSize = (width) => {
+  let sizes;
+  
+    if (width < 700) {
+      sizes = { button: buttonSmall, videoSize: videoSize.small }
+    } else if (width < 1500) {
+      sizes = { button: buttonMedium, videoSize: videoSize.medium}
+    } else {
+      sizes = { button: buttonBig, videoSize: videoSize.big }
+    }
+    console.log(sizes)
+    return sizes;
+}
 
 function HeroSection({ dark = false }) {
-    const {t} = useTranslation('common')
-    const navigate = useNavigate()
-    const size = useWindowSize()
+  const {t} = useTranslation('common')
+  const navigate = useNavigate()
+  const {width} = useWindowSize()
+  const [sizes, setSizes] = useState(chooseSize(500))
+
+  useEffect(() => {
+    setSizes(chooseSize(width))
+  }, [width])
   return (
-    <Section dark={dark}>
-        <PageText heading={t('Home.Hero.heading')}>{t('Home.Hero.text')}</PageText>
-        <ReactPlayer width={size.width > 700 ? videoSize.big.width : videoSize.small.width} height={size.width > 700 ? videoSize.big.height : videoSize.small.height} url="https://www.youtube.com/watch?v=Bti7XjsrNSg" />
-        <Button className={size.width > 700 ? buttonBig : buttonSmall} size='md' onClick={() => navigate('/order')}>{t('Home.Hero.button')}</Button>
-    </Section>
+    <div className='hero-section'>
+      <Section dark={dark}>
+          <PageText heading={t('Home.Hero.heading')}>{t('Home.Hero.text')}</PageText>
+          <ReactPlayer controls={true} width={sizes.videoSize.width} height={sizes.videoSize.height} url="https://www.youtube.com/watch?v=Bti7XjsrNSg" />
+          <Button style={sizes.button} size='md' onClick={() => navigate('/become-our-client')}>{t('Home.Hero.button')}</Button>
+      </Section>
+    </div>
   )
 }
 

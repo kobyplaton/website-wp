@@ -1,0 +1,11 @@
+.text-divider {
+    width: 100px;
+    height: 2px;
+    background-color: turquoise;
+    margin: 0 auto 16px auto;
+}
+
+.about-us-text {
+    text-align: start;
+    line-height: 1.6rem;
+}

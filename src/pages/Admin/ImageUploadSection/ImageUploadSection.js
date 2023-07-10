@@ -4,7 +4,6 @@ import { nanoid } from 'nanoid';
 import UploadImage from './UploadImage';
 import { uploadImageToStorage } from '../../../firebase/storage';
 import { setDbFile } from '../../../firebase/firestore';
-import useImageSizes from '../../../components/hooks/useImageSizes';
 
 function ImageUploadSection() {
 

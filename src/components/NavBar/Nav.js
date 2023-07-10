@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
 import logo from '../../styles/images/logo.png'
 import '../../styles/Nav.css'
 import Menu from './Menu'
 import { useNavigate } from 'react-router-dom'
 import LangDropDown from './LangDropDown'
 import { useWindowSize } from '@uidotdev/usehooks'
-import MenuPc from './MenuPc'
 
 function Nav() {
     
-    const iconSize = 23;
     const [toggleMenu, setToggleMenu] = useState(false)
     const size = useWindowSize()
 

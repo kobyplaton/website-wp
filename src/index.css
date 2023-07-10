@@ -3,7 +3,8 @@
   --font-secondary : 'Roboto', sans-serif;
   --border-shape : 555555px;
   --color-grey : #818080;
-  --color-blue : rgb(41, 93, 207);
+  --color-dark-blue : rgb(41, 93, 207);
+  --color-blue : turquoise;
   --color-light-grey : #eef0f3;
   --color-dark-grey : rgb(45,45,45);
   --color-black : #323232;
@@ -24,7 +25,7 @@ code {
 }
 
 .largest-font {
-  font-size: 90px !important;
+  font-size: 120px !important;
   letter-spacing: 8px;
   line-height: 100px;
 }

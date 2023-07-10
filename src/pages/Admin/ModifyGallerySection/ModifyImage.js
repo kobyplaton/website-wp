@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import useSlides from '../../../components/hooks/useSlides'
+import React, { useState } from 'react'
 import { deleteDbFile } from '../../../firebase/firestore'
 import { deleteImageInStorage } from '../../../firebase/storage'
 import { Button } from 'react-bootstrap'
-import { BiEditAlt } from 'react-icons/bi'
 import { AiOutlineDelete, AiOutlineEdit } from 'react-icons/ai'
 
 function ModifyImage({image, modifyImageInDb, setSlides}) {
@@ -41,7 +39,7 @@ function ModifyImage({image, modifyImageInDb, setSlides}) {
   return (
     <div key={image.id} className="image-profile">
       <div className="d-flex">
-          <img className='me-3' src={image.src} width={250} height={250} />
+          <img className='me-3' src={image.src} width={250} height={250} alt='' />
           <div className='d-flex flex-column'>
           <AiOutlineEdit className='mb-2' onClick={() => setViewDetails((prev) => !prev)} size={35} />
           <AiOutlineDelete onClick={handleDeleteClick} size={35} />

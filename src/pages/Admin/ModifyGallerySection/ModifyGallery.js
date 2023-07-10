@@ -1,5 +1,4 @@
-import React, { Suspense, lazy, useEffect } from 'react'
-import Gallery from '../../Gallery/Gallery'
+import React from 'react'
 import useSlides from '../../../components/hooks/useSlides'
 import { nanoid } from 'nanoid'
 import ModifyImage from './ModifyImage'

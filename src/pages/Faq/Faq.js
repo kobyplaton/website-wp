@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import Question from './Question'
 import { NavContext } from '../../context/NavContext';
-import { useTranslation } from 'react-i18next';
 import useQuestions from './useQuestions';
 
 function Faq() {

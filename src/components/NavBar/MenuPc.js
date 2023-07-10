@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import '../../styles/Menu.css'
-import { Link, NavLink, useLocation, useNavigate, useParams, useResolvedPath, useSearchParams } from 'react-router-dom'
+import {  NavLink, useNavigate, useResolvedPath } from 'react-router-dom'
 import { NavContext } from '../../context/NavContext'
 import { Dropdown } from 'react-bootstrap'
 import { AiOutlineMenu } from 'react-icons/ai'
@@ -26,7 +26,7 @@ function MenuPc() {
 
   const getCurrentPage = (path) => {
     const page = getPathItems(path, 1)
-    if (page == '') return 'home'
+    if (page === '') return 'home'
     return page
   }
 
@@ -38,7 +38,7 @@ function MenuPc() {
   const scrollTo = (ref, y, behavior = 'smooth') => {
     if (ref) {
       ref.current.scrollIntoView({behavior})
-    } else if (typeof y == 'number') {
+    } else if (typeof y === 'number') {
       window.scrollTo({
         top: y,
         behavior

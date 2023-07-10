@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext } from 'react'
 import '../styles/ContactUs.css'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaParking, FaInstagram, FaInstagramSquare, FaFacebookSquare } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaParking } from 'react-icons/fa'
 import PageText from '../components/PageText'
 import { NavContext } from '../context/NavContext'
 import { BiLinkExternal } from 'react-icons/bi'
@@ -21,7 +21,7 @@ function ContactUs() {
                 <FaEnvelope size={iconSize} />
                 <a className='link text-black-50' href="mailto: paleta.permanente.uni@outlook.com" >paleta.permanente.uni@outlook.com</a>
             </div>
-            <div className='contact-icon' onClick={() => window.open("https://goo.gl/maps/aYJZwcLyYTczja479", "_blank")}>
+            <div className='contact-icon' onClick={() => window.open("https://goo.gl/maps/sYr2ftsyTo6Bctme8", "_blank")}>
                 <FaMapMarkerAlt size={iconSize} />
                 <p className='text-black-50 mb-0'>
                     {t("Home.ContactUs.icon1")}
