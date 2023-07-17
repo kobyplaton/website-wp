@@ -22,7 +22,7 @@ function Nav() {
     <div className='nav'>
         <div className="nav-content">
             <div className="nav-right">
-                <img onClick={navigateHome} width={50} height={50} src={logo} alt='logo' />
+                {/* <img onClick={navigateHome} width={50} height={50} src={logo} alt='logo' /> */}
             </div>
             <div className="nav-left">
                 <LangDropDown />

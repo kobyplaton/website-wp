@@ -10,10 +10,10 @@
         "ContactUs": {
             "heading": "Contact Us",
             "icon1": "Nosso escritório em Faro",
-            "icon2": "Estacionamento nas proximidades"
+            "icon2": "Estacionamento gratuito nas proximidades"
         },
         "AboutUs": { 
-            "heading": "About Us",
+            "heading": "Porque nos escolher?",
             "section1": {
                 "text": "",
                 "bullet1": "",
@@ -128,6 +128,7 @@
             "email": "Email",
             "repeatEmail": "Reapeat Emaol",
             "emailMsg": "Nunca compartilharemos seu email com mais ninguém.",
+            "checkbox": "",
             "button": "Verificar"
         }
     },

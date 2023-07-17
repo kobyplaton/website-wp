@@ -1,11 +1,12 @@
 import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
 import '../../styles/MiniGallery.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { getImageList } from '../../firebase/storage';
 import { nanoid } from 'nanoid'
 import { useWindowSize } from '@uidotdev/usehooks'
 import MiniGalleryImg from './MiniGalleryImg';
+import Lightbox from 'yet-another-react-lightbox'
+import CustomSlide from '../../pages/Gallery/CustomSlide';
 
 const useImageSize = () => {
     const {width} = useWindowSize()
@@ -20,6 +21,7 @@ const useImageSize = () => {
   }
 function MiniGallery() {
 
+    const [lightbox, toggleLightbox] = React.useState()
     const [imageList, setImageList] = React.useState([])
     const optimalLength = useImageSize()
 
@@ -30,11 +32,23 @@ function MiniGallery() {
   
 
   return (
-    <Carousel dynamicHeight={true} centerMode={true} centerSlidePercentage={50} infiniteLoop={true} autoPlay={true} stopOnHover={true} interval={5000} showThumbs={false} transitionTime={1000} >
+    <>
+      <div className="mini-gallery">
+        <Lightbox render={{
+        slide: ({ slide }) => <CustomSlide slide={slide} />
+      }}
+        slides={imageList}
+        open={lightbox}
+        close={() => toggleLightbox(false)}
+         />
         {imageList.map((image) => (
-           <MiniGalleryImg key={nanoid()} src={image.src} optimalLength={optimalLength} />
+          <div className="img-box">
+            <img onClick={() => toggleLightbox(true)} key={nanoid()} src={image.src} width={250} height={350}></img>
+          </div>
         ))}
-    </Carousel>
+      </div>
+      Come to our store to see over 40 more wall prints!
+    </>
   )
 }
 

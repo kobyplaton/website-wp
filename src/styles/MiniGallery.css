@@ -1,5 +1,18 @@
+.mini-gallery {
+    display: flex;
+    margin-bottom: 40px;
+}
 
+.img-box {
+    background-color: black;
+    /* opacity: 0; */
+}
 
-.carousel-image-container {
+.img-box > img:hover {
+    opacity: .5;
+}
+
+.img-box > img {
+    opacity: 1;
     cursor: zoom-in;
 }

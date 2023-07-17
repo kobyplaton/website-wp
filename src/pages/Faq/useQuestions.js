@@ -6,10 +6,6 @@ function useQuestions() {
 
     const questions = [
         {
-            question: t('Home.Faq.Question0.question'),
-            answer: t('Home.Faq.Question0.answer')
-        },
-        {
             question: t('Home.Faq.Question1.question'),
             answer: t('Home.Faq.Question1.answer')
         },

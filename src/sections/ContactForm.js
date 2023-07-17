@@ -8,6 +8,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { useWindowSize } from "@uidotdev/usehooks";
 import img from '../styles/images/office-bkg-hq-2.png'
 import { useTranslation } from "react-i18next";
+import ContactFormLicensing from "./ContactFormLicensing";
 
 const classesBig = 'px-5'
 const classesSmall = 'px-3'
@@ -60,7 +61,7 @@ function ContactForm({dark = false , black = false}) {
     <div className="d-flex mx-0 px-0"
     >
 
-    <Section additionalClasses={'px-0 mx-0'} sectionRef={messageUsRef} black={black} dark={dark}>
+    <div className="contact-form-container">
 
     <Container fluid className="px-0">
       <Row style={{width: width > 1200 && width }} className="mx-0">
@@ -118,12 +119,12 @@ function ContactForm({dark = false , black = false}) {
         xl={{span: 6}}
         >
         
-          <ImagesIfSizeIsBig /> 
+          <ContactFormLicensing />
         </Col>}
       </Row>
     </Container>
 
-</Section>
+</div>
             </div>
   );
 

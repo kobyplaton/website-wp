@@ -1,3 +1,10 @@
 .instruction-list {
     gap: 20px;
 }
+
+.order-subheading {
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+

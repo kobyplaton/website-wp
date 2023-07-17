@@ -44,11 +44,11 @@ useEffect(() => {
   return (
     <div className='custom-slide'>
       <img src={src} width={convertedSizes.width} height={convertedSizes.height} alt='' />
-      <div style={{color: 'white'}}>{t("Gallery.lightbox.title")} {title}</div>
+      {/* <div style={{color: 'white'}}>{t("Gallery.lightbox.title")} {title}</div>
       <div style={{color: 'white'}}>{t("Gallery.lightbox.width")} {width}</div>
       <div style={{color: 'white'}}>{t("Gallery.lightbox.height")} {height}</div>
       <div style={{color: 'white'}}>{t("Gallery.lightbox.price")} {price}</div>
-      <div style={{color: 'white'}}>{t("Gallery.lightbox.details")} {details}</div>
+      <div style={{color: 'white'}}>{t("Gallery.lightbox.details")} {details}</div> */}
     </div>
   )
 }

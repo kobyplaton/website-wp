@@ -10,15 +10,15 @@
         "ContactUs": {
             "heading": "Contact Us",
             "icon1": "Our office, Faro",
-            "icon2": "Parking Near By"
+            "icon2": "Free Parking Nearby"
         },
         "AboutUs": {
-            "heading": "About Us",
-            "section1": "Welcome to Print On Your Wall™, where walls become art!",
+            "heading": "Why Choose Us?",
+            "section1": "Welcome to Printonyourwall™, where walls become art!",
             "section2": "Step into our physical store and witness the magic of bringing your imagination to life on your walls. While our gallery showcases samples, the possibilities are truly limitless when it comes to transforming your space.",
             "section3": "We can turn your wildest ideas into reality. Whether it's a breathtaking landscape, a captivating abstract design, or something entirely unique, we have the expertise to make it happen.",
             "section4": "Using cutting-edge technology and premium materials, we bring your vision to life with precision and quality. Let us create a masterpiece that will leave a lasting impression.",
-            "section5": "Visit us today and unlock the full potential of your walls. Print On Your Wall™ - Where imagination takes center stage."
+            "section5": "Visit us today and unlock the full potential of your walls. Printonyouwall™ - Where imagination takes center stage."
         },
         "WallPrinting": {
             "heading": "How does wall printing work?",
@@ -65,37 +65,33 @@
         },
 
         "Faq": {
-            "Question0": {
+            "Question1": {
                 "question": "What is wall printing?",
                 "answer": "Wall printing, is an innovative method that involves using a specialized printer to apply custom designs directly onto various surfaces. This technique eliminates the need for glues or sticky components, ensuring that the original texture and appearance of the wall remain intact. It enables the transformation of plain walls into personalized and visually striking works of art, making it an ideal solution for adding character and individuality to any space."
             },
-            "Question1": {
-                "question": "What are the costs of printing?",
-                "answer": "The pricing of our services is determined based on several factors including location, size of the artwork, and the quality of the image. Typically, our pricing ranges between €150 and €250 per square meter. However, for more complex installations, a setup fee may be applicable. For larger projects or multiple images, we offer special project pricing. This allows us to tailor the pricing according to the specific requirements and scope of the project, ensuring that you receive a fair and competitive price for our services."
-            },
             "Question2": {
-                "question": "How long is the printing job?",
-                "answer": "The production time for your artwork can vary depending on its size. Smaller pieces may take around 30 minutes, while larger ones could require several hours to complete. Our machine has the capability to print one square meter within an hour. It's important to note that setup times can also vary depending on the complexity of the project. This can range from 15 minutes for simpler setups to several hours, particularly if scaffolding or additional equipment is needed to ensure a successful printing process. We strive to efficiently manage the setup and production process to deliver the highest quality results in a timely manner."
+                "question": "What are the costs of printing?",
+                "answer": "The pricing of our services is determined based on several factors including location, size of the artwork, and the quality of the image. Our pricing starts from €95 per square meter."
             },
             "Question3": {
-                "question": "What colours can be printed?",
-                "answer": "Our printer utilizes the CMYK colour model, while conventional digital cameras and images found on the internet typically use the RGB colour model. Consequently, we will need to convert any images that use the RGB colour model before printing them. Although we strive to maintain colour comparability, we cannot guarantee exact colour replication. It is important to note that we can print white colour as well. Our wall printer is the only available option capable of printing white, which opens up numerous possibilities, especially when working with dark or coloured backgrounds."
+                "question": "What type of walls can be printed on?",
+                "answer": "We have the capability to print on most surfaces, such as cement, brick, drywall, wood, tiles, metal and even glass, expanding the range of potential printing options."
             },
             "Question4": {
-                "question": "What type of walls can be printed on?",
-                "answer": "We have the capability to print on almost any wall surface that is compatible with our ink. This includes common materials such as cement, brick, and drywall, among others. However, the possibilities don't stop there. We can also print on surfaces like wood, tiles, and even glass, expanding the range of potential printing options."
+                "question": "Can I print my own images?",
+                "answer": "Yes, you can print images from you phone, tablet or a standart camera. However, it's crucial to consider the quality of the picture as it greatly influences the final result. We generally recommend using images with a resolution of a minimum 300 dpi (dots per inch) to ensure optimum printing quality."
             },
             "Question5": {
-                "question": "Can you pint my own image?",
-                "answer": "Yes, we can print images on our wall art. However, it's crucial to consider the quality of the picture as it greatly influences the final result. We generally recommend using images with a resolution of 300 dpi (dots per inch) for optimal printing quality. Additionally, please note that there may be restrictions on the height of the image to ensure the best possible outcome."
+                "question": "How do I choose the image i want printing?",
+                "answer": "You can provide your own image from your telephone, you can use Printonyourwall™ free pictures or use your own designer."
             },
             "Question6": {
-                "question": "Is a designer required for the image selection?",
-                "answer": "We are dedicated to assisting you in selecting the perfect art for your home. Whether you have a designer or not, we are thrilled to collaborate and work together to create the ideal design that perfectly complements your space. Your satisfaction is our priority, and we are committed to meeting the specific demands and preferences of your project."
+                "question": "What's the durability of the prints?",
+                "answer": "Images can be printed for indoor and outdoor walls. When displayed indoors, the colours of the printed images are expected to maintain their quality for approximately 7 to 10 years. For outdoor installations, the colour durability is estimated at around 5 to 7 years."
             },
             "Question7": {
-                "question": "What are the conditions and requirements for wall printing?",
-                "answer": "Images can be printed for both indoor and outdoor applications. When displayed indoors, the colours of the printed images are expected to maintain their quality for approximately 10 years. For outdoor installations, the colour durability is estimated at around 5 years. Please note that the minimum ceiling height required for our printing service is 1.95 meters. This ensures the proper display and visual impact of the printed artwork within your space. To achieve the best possible print quality, we recommend using images with a resolution of 300 dpi (dots per inch) or higher. This higher resolution ensures sharper details and better overall image reproduction."
+                "question": "What if I want to change the image in a couple of years?",
+                "answer": "Simply paint three coats of emulsion over the print and it's gone."
             }
         }
     },
@@ -112,7 +108,7 @@
     },
     "Order": {
         "heading": "Become our client",
-        "subheading": "",
+        "subheading": "Lets go ahead with the print?",
         "verified": "",
         "wrongMsg": "",
         "instructions": {
@@ -127,6 +123,7 @@
             "email": "Email",
             "repeatEmail": "Repeat Email Address",
             "emailMsg": "We'll never share your email with anyone else.",
+            "checkbox": "I wish to go ahead with the print, please contact me",
             "button": "Verify"
         }
     },

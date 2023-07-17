@@ -1,3 +1,11 @@
+.contact-form-container {
+    background-color: var(--color-black);
+    color: var(--button-text-color);
+}
+
+.contact-form-container > div {
+    color: white;
+}
 .contact-form {
     width: 100%;
     display: flex;

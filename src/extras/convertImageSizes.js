@@ -9,4 +9,4 @@ export const convertImageSizes = ({width = 250, height = 250}, optimalLength = 2
         return {width: String(optimalLength / ratio), height: String(optimalLength)}
     }
 
-}
+} 

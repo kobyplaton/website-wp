@@ -36,7 +36,6 @@ function Home() {
             <FaqSection />
             <ContactUsSection dark />
             <AboutUsSection />
-            <WallPrintingSection />
           </Col>
           <Col
           sm={{span: 1}}

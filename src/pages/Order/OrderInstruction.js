@@ -14,12 +14,20 @@ function OrderInstruction() {
   const [validationMsg, setValidationMsg] = useState('')
   const [verified, setVerified] = useState()
   const [toggleVerifiedMsg, setToggleVerifiedMsg] = useState()
+  const [buttonDisabled, setButtonDisabled] = useState(true)
   const keyRef = useRef()
   const emailRef = useRef()
   const confirmEmailRef = useRef()
   const formRef = useRef()
 
 
+  const handleCheckboxChange = (e) => {
+    if (e.target.checked) {
+      setButtonDisabled(false)
+    } else {
+      setButtonDisabled(true)
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -56,7 +64,8 @@ function OrderInstruction() {
   return (
     <Page hero={t("Order.heading")}>
         <Section>
-          <PageText heading={'Instructions'} textAlign='start'>
+          <PageText heading={t("Order.heading")} textAlign='start'>
+            <h2 className='order-subheading'>{t("Order.subheading")}</h2>
             <ol className="instruction-list d-flex flex-column ">
                 <li className="instruction">{t("Order.instructions.1")} 🌇</li>
                 <li className="instruction">{t("Order.instructions.5")} 🚗</li>
@@ -80,7 +89,13 @@ function OrderInstruction() {
                 <input className='form-control' ref={confirmEmailRef} name='emailRepeat' placeholder='repeat email' type="email" required={true} />
               </div>
               <div className="form-group mb-3">
-                <Button type='submit' onClick={(e) => handleSubmit(e)}>{t("Order.form.button")}</Button>
+                  <label for='checkbox'>
+                    <input onChange={handleCheckboxChange} style={{marginRight: '8px'}} type="checkbox" name='checkbox' />
+                    {t("Order.form.checkbox")}
+                  </label>
+              </div>
+              <div className="form-group mb-3">
+                <Button disabled={buttonDisabled} type='submit' onClick={(e) => handleSubmit(e)}>{t("Order.form.button")}</Button>
               </div>
             </form>
             {toggleVerifiedMsg && 
