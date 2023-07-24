@@ -14,11 +14,11 @@
         },
         "AboutUs": {
             "heading": "Why Choose Us?",
-            "section1": "Welcome to Printonyourwall™, where walls become art!",
-            "section2": "Step into our physical store and witness the magic of bringing your imagination to life on your walls. While our gallery showcases samples, the possibilities are truly limitless when it comes to transforming your space.",
+            "section1": "Welcome to Printonyourwall™",
+            "section2": "Step into our showroom and witness the magic of bringing your imagination to life on your walls. While our showroom displays samples, the possibilities are truly limitless when it comes to transforming your space.",
             "section3": "We can turn your wildest ideas into reality. Whether it's a breathtaking landscape, a captivating abstract design, or something entirely unique, we have the expertise to make it happen.",
             "section4": "Using cutting-edge technology and premium materials, we bring your vision to life with precision and quality. Let us create a masterpiece that will leave a lasting impression.",
-            "section5": "Visit us today and unlock the full potential of your walls. Printonyouwall™ - Where imagination takes center stage."
+            "section5": "Visit us today and unlock the full potential of your walls. Printonyouwall™ - You dream it, we print it"
         },
         "WallPrinting": {
             "heading": "How does wall printing work?",
@@ -67,7 +67,7 @@
         "Faq": {
             "Question1": {
                 "question": "What is wall printing?",
-                "answer": "Wall printing, is an innovative method that involves using a specialized printer to apply custom designs directly onto various surfaces. This technique eliminates the need for glues or sticky components, ensuring that the original texture and appearance of the wall remain intact. It enables the transformation of plain walls into personalized and visually striking works of art, making it an ideal solution for adding character and individuality to any space."
+                "answer": "Wall printing, is an innovative method that involves using a specialized vertical wall printer to print custom designs directly onto various surfaces. This technique eliminates the need for glues or sticky components, ensuring that the original texture and appearance of the wall remain intact. It enables the transformation of plain walls into personalized and visually striking works of art, making it an ideal solution for adding character and individuality to any space, whether it is domestic or comercial."
             },
             "Question2": {
                 "question": "What are the costs of printing?",
@@ -79,19 +79,19 @@
             },
             "Question4": {
                 "question": "Can I print my own images?",
-                "answer": "Yes, you can print images from you phone, tablet or a standart camera. However, it's crucial to consider the quality of the picture as it greatly influences the final result. We generally recommend using images with a resolution of a minimum 300 dpi (dots per inch) to ensure optimum printing quality."
+                "answer": "Yes, you can print images from your phone, tablet or a standart camera. However, it's crucial to consider the quality of the picture as it greatly influences the final result. We generally recommend using images with a resolution of a minimum 300 dpi (dots per inch) to ensure optimum printing quality."
             },
             "Question5": {
                 "question": "How do I choose the image i want printing?",
-                "answer": "You can provide your own image from your telephone, you can use Printonyourwall™ free pictures or use your own designer."
+                "answer": "You can provide your own image from your telephone, you can use Printonyourwall™ free pictures, Printonyourwall™ designer pictures or use your own designer."
             },
             "Question6": {
                 "question": "What's the durability of the prints?",
                 "answer": "Images can be printed for indoor and outdoor walls. When displayed indoors, the colours of the printed images are expected to maintain their quality for approximately 7 to 10 years. For outdoor installations, the colour durability is estimated at around 5 to 7 years."
             },
             "Question7": {
-                "question": "What if I want to change the image in a couple of years?",
-                "answer": "Simply paint three coats of emulsion over the print and it's gone."
+                "question": "What type of ink do we use?",
+                "answer": "We use professional specialized ink for wall printing. This ink is safe and certified to be used inside restaurants, schools, hospitals, and any other indoor facilities."
             }
         }
     },
