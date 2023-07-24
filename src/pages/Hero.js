@@ -22,7 +22,7 @@ function Hero({ text = '', heading, subheading = '' }) {
         <img className='hero-img' src={img} alt="Printonyourwall™" srcset="" />
         <div className="trademark-text">is a Registered Portuguese Trade Mark #699676 </div>
       </div>
-      <div className="subhero">You dream it, We print it</div>
+      {/* <div className="subhero">You dream it, We print it</div> */}
     </div>
   )
 }

@@ -54,8 +54,10 @@
 }
 
 .subhero {
-    font-family: 'Tangerine';
-    font-size: 80px;
+    /* font-family: 'Tangerine'; */
+    font-size: 48px;
+    font-weight: 100;
+    margin-top: 50px;
     text-align: center;
     animation: fade-in 500ms;
     animation-delay: 1000ms;
