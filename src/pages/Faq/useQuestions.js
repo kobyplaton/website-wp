@@ -33,6 +33,10 @@ function useQuestions() {
             question: t('Home.Faq.Question7.question'),
             answer: t('Home.Faq.Question7.answer')
         },
+        {
+            question: t('Home.Faq.Question8.question'),
+            answer: t('Home.Faq.Question8.answer')
+        },
     ]
   
     return questions

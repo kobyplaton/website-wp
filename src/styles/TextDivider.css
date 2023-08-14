@@ -1,0 +1,6 @@
+.text-divider {
+    width: 100px;
+    height: 2px;
+    background-color: var(--color-blue);
+    margin: 0 auto 16px auto;
+}

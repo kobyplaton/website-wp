@@ -36,7 +36,8 @@ const router = createBrowserRouter([
   },
   {
     path: '/admin',
-    element: <Admin />
+    element: <Admin />,
+    
   },
   {
     path: '/become-our-client',

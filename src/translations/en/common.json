@@ -4,7 +4,7 @@
         "Hero": {
             "heading": "Watch Our Introductory Video!",
             "text": "This video shows how we create our desins and bring them to your wall!",
-            "button": "Get Started"
+            "button": "Press to get started with your print"
         },
         "MiniGallery": "Checkout Some Of Our Wall Prints",
         "ContactUs": {
@@ -75,11 +75,11 @@
             },
             "Question3": {
                 "question": "What type of walls can be printed on?",
-                "answer": "We have the capability to print on most surfaces, such as cement, brick, drywall, wood, tiles, metal and even glass, expanding the range of potential printing options."
+                "answer": "We have the capability to print on most flat surfaces, such as cement, brick, drywall, wood, tiles, metal and even glass, expanding the range of potential printing options."
             },
             "Question4": {
                 "question": "Can I print my own images?",
-                "answer": "Yes, you can print images from your phone, tablet or a standart camera. However, it's crucial to consider the quality of the picture as it greatly influences the final result. We generally recommend using images with a resolution of a minimum 300 dpi (dots per inch) to ensure optimum printing quality."
+                "answer": "Yes, you can print images from your phone, tablet or a standart camera. However, it's crucial to consider the quality of the picture as it greatly influences the final result. We generally recommend using images with a minimum resolution of 300 dpi (dots per inch) to ensure optimum printing quality."
             },
             "Question5": {
                 "question": "How do I choose the image i want printing?",
@@ -92,6 +92,10 @@
             "Question7": {
                 "question": "What type of ink do we use?",
                 "answer": "We use professional specialized ink for wall printing. This ink is safe and certified to be used inside restaurants, schools, hospitals, and any other indoor facilities."
+            },
+            "Question8": {
+                "question": "How big can my print be?",
+                "answer": "There is no width limit; however, for the height, we can print up to 4 meters without requiring any scaffolding."
             }
         }
     },
@@ -102,6 +106,7 @@
             "title": "Title:",
             "width": "Width:",
             "height": "Height:",
+            "area": "Surface Area",
             "price": "Price Approximation:",
             "details": "Extra Details:"
         }
@@ -112,11 +117,10 @@
         "verified": "",
         "wrongMsg": "",
         "instructions": {
-            "1": "Look through our gallery to get an idea of the design you want",
-            "2": "At our office get a unique client key",
-            "3": "Complete the form Bellow",
-            "4": "Wait for our email",
-            "5": "Come to our office to see wall printing in real life"
+            "1": "At our office get a unique client key",
+            "2": "Complete the form Bellow",
+            "3": "Wait for our email",
+            "4": "Come to our office to see wall printing in real life"
         },
         "form": {
             "key": "Customer Key",

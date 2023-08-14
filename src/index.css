@@ -4,12 +4,13 @@
   --border-shape : 555555px;
   --color-grey : #818080;
   --color-dark-blue : rgb(41, 93, 207);
-  --color-blue : turquoise;
+  --color-blue : rgb(41, 93, 207);
   --color-light-grey : #eef0f3;
   --color-dark-grey : rgb(45,45,45);
   --color-black : #323232;
 
   --nav-height : 60px;
+
 }
 
 body {

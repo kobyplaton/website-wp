@@ -50,7 +50,7 @@ function MiniGallery() {
     for (let image of imageList) {
       for (let detail of imageDetails) {
         if (image.src.includes(detail.id)) {
-          slidesArr.push({src: image.src, ...detail})
+          slidesArr.push({src: image.src, width: image.width, height: image.height, ...detail})
         }
       }
     }
@@ -58,29 +58,32 @@ function MiniGallery() {
   }, [imageList, imageDetails])
 
 
+
   return (
     <>
       <div className="mini-gallery">
         <Lightbox render={{
-        slide: ({ slide }) => <CustomSlide slide={slide} />
+        slide: ({ slide }) => <CustomSlide key={nanoid()} slide={slide} />
       }}
-        slides={imageList}
+        slides={slides}
         open={lightbox}
         index={currentSlideIndex}
         close={() => toggleLightbox(false)}
          />
         {slides.map((slide, index) => (
-          <div className="gallery-item-container">
-          <div className='image-details'>
-            {slide.details}
-          </div>
-          <div className="img-box">
-            <img onClick={() => handleImageClick(index)} key={nanoid()} src={slide.src} width={250} height={350}></img>
-          </div>
+          <div key={nanoid()} className="gallery-item-container">
+            <div className='image-details'>
+              {/* {slide.details} */}
+            </div>
+            <div className="img-box">
+              <img onClick={() => handleImageClick(index)} key={nanoid()} src={slide.src} width={250} height={350}></img>
+            </div>
           </div>
         ))}
       </div>
-      Come to our showroom to see over 40 wall prints!
+      <div className='gallery-text'>
+        Come to our showroom to see over 40 wall prints!
+      </div>
     </>
   )
 }

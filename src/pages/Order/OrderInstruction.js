@@ -67,11 +67,10 @@ function OrderInstruction() {
           <PageText heading={t("Order.heading")} textAlign='start'>
             <h2 className='order-subheading'>{t("Order.subheading")}</h2>
             <ol className="instruction-list d-flex flex-column ">
+                <li className="instruction">{t("Order.instructions.4")} ✉️</li>
                 <li className="instruction">{t("Order.instructions.1")} 🌇</li>
-                <li className="instruction">{t("Order.instructions.5")} 🚗</li>
                 <li className="instruction">{t("Order.instructions.2")} 🔑</li>
                 <li className="instruction">{t("Order.instructions.3")} ✍️</li>
-                <li className="instruction">{t("Order.instructions.4")} ✉️</li>
             </ol>
           </PageText>
             <form ref={formRef} className='d-flex flex-column mt-5'>

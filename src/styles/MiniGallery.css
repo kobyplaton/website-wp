@@ -1,5 +1,8 @@
 .mini-gallery {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
@@ -20,4 +23,8 @@
 .image-details {
     text-transform: capitalize;
     margin-bottom: 10px;
+}
+
+.gallery-text {
+    font-size: 1.5rem;
 }

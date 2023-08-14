@@ -53,11 +53,9 @@ function HeroSection({ dark = false }) {
   return (
     <div className='hero-section'>
       <Section dark={dark}>
-          <div className="subhero">You dream it, We print it</div>
           <PageText heading={t('Home.Hero.heading')}>
           </PageText>
-          <ReactPlayer controls={true} width={sizes.videoSize.width} height={sizes.videoSize.height} url="https://www.youtube.com/watch?v=Bti7XjsrNSg" />
-          <Button style={sizes.button} size='md' onClick={() => navigate('/become-our-client')}>{t('Home.Hero.button')}</Button>
+          <ReactPlayer style={{marginBottom: "60px"}} controls={true} width={sizes.videoSize.width} height={sizes.videoSize.height} url="https://youtu.be/10qAcj74MjY" />
       </Section>
     </div>
   )

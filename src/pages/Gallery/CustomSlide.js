@@ -2,6 +2,7 @@ import { useWindowSize } from '@uidotdev/usehooks';
 import React, { useEffect, useState } from 'react'
 import { convertImageSizes } from '../../extras/convertImageSizes';
 import { useTranslation } from 'react-i18next';
+import multiplyStrings from '../../extras/multiplyStringsFunc';
 
 const useSlideSize = () => {
   const {width} = useWindowSize()
@@ -44,9 +45,10 @@ useEffect(() => {
   return (
     <div className='custom-slide'>
       <img src={src} width={convertedSizes.width} height={convertedSizes.height} alt='' />
-      {/* <div style={{color: 'white'}}>{t("Gallery.lightbox.title")} {title}</div>
       <div style={{color: 'white'}}>{t("Gallery.lightbox.width")} {width}</div>
       <div style={{color: 'white'}}>{t("Gallery.lightbox.height")} {height}</div>
+      <div style={{color: 'white'}}>{t("Gallery.lightbox.area")} {multiplyStrings(height, width)}m²</div>
+      {/* <div style={{color: 'white'}}>{t("Gallery.lightbox.title")} {title}</div>
       <div style={{color: 'white'}}>{t("Gallery.lightbox.price")} {price}</div>
       <div style={{color: 'white'}}>{t("Gallery.lightbox.details")} {details}</div> */}
     </div>

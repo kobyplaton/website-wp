@@ -27,7 +27,8 @@
 
 .input {
     all: unset;
-    width: 94%;
+    width: 100%;
+    max-width: 878px;
     height: 30px;
     font-family: var(--font-secondary);
     padding: 5px 10px;
@@ -36,6 +37,7 @@
     box-shadow: none;
     border: 1px solid var(--color-dark-blue);
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .input::-webkit-input-placeholder {
@@ -44,6 +46,7 @@
 
 .textarea {
     width: 100%;
+    max-width: 900px;
     height: 150px;
     background-color: transparent;
     border: 1px solid var(--color-dark-blue);
@@ -56,3 +59,11 @@
     color: white;
 }
 
+
+.form-text {
+    max-width: 878px;
+}
+
+.form-area {
+    max-width: 900px;
+}

@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next'
 import { Col } from 'react-bootstrap'
 import WallPrintingSection from '../sections/WallPrintingSection'
 import MiniGallerySection from '../sections/MiniGallery/MiniGallerySection'
+import WelcomeSection from '../sections/WelcomeSection'
 
 function Home() {
 
@@ -30,6 +31,7 @@ function Home() {
           xl={{span: 8}}
          className='px-0'
           >
+            {/* <WelcomeSection /> */}
             <HeroSection />
             <Divider />
             <MiniGallerySection />

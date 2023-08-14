@@ -7,8 +7,18 @@ function Hero({ text = '', heading, subheading = '' }) {
 
   const size = useWindowSize()
 
-  const classesBig = 'my-5 py-5 largest-font'
-  const classesSmall = 'mt-5'
+  const standardImageSize = 600;
+  const smallerImageSize = window.innerWidth - 50;
+  const standardFont = '48px';
+  const smallerFont = '32px';
+
+  const getHeroSize = () => {
+    return size.width > standardImageSize ? standardImageSize : smallerImageSize
+  }
+
+  const getSubHeroSize = () => {
+    return size.width > 600 ? standardFont : smallerFont;
+  }
 
   return (
     <div className="hero-container my-5">
@@ -19,10 +29,10 @@ function Hero({ text = '', heading, subheading = '' }) {
         <span className='hero-4'>Wall™</span>
       </div> */}
       <div className="trademark">
-        <img className='hero-img' src={img} alt="Printonyourwall™" srcset="" />
-        <div className="trademark-text">is a Registered Portuguese Trade Mark #699676 </div>
+        <img className='hero-img' width={getHeroSize()} src={img} alt="Printonyourwall™" />
+        <div className="trademark-text">is a Registered Portuguese Trade Mark 699676 </div>
       </div>
-      {/* <div className="subhero">You dream it, We print it</div> */}
+      <div className="subhero" style={{fontSize: getSubHeroSize()}}>"You dream it and We'll print it"</div>
     </div>
   )
 }
