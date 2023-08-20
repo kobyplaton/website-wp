@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './pages/Home'
 import Gallery from './pages/Gallery/Gallery'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom'
 import Admin from './pages/Admin/Admin'
 import ContactForm from './sections/ContactForm'
 import AboutUsSection from './sections/AboutUsSection/AboutUsSection'
@@ -16,25 +16,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <Home />,
     children: [
-      {
-        path: '/home/message-us',
-        element: <ContactForm />,
-      },
-      {
-        path: '/home/about-us',
-        element: <AboutUsSection />
-      },
-      {
-        path: '/home/faq',
-        element: <FaqSection />
-      },
-      {
-        path: '/home/contact-us',
-        element: <ContactUs />
-      }
-    ]
-  },
-  {
+        {
     path: '/admin',
     element: <Admin />,
     
@@ -43,6 +25,9 @@ const router = createBrowserRouter([
     path: '/become-our-client',
     element: <OrderInstruction />
   }
+    ]
+  },
+
 ])
 
 

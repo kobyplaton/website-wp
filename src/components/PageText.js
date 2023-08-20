@@ -7,13 +7,13 @@ const classesHeadingSmall = 'mt-5 mb-5 font-medium'
 const textBig = 'font-ms mb-5'
 const textSmall = 'mb-5'
 
-function PageText({children, heading, textAlign = 'center'}) {
+function PageText({children, heading, headingColor = 'blue', textAlign = 'center'}) {
 
   const size = useWindowSize()
 
   return (
     <div style={{textAlign}} className='page-text'>
-        <div className={`page-text-heading ${size.width > 1200 ? classesHeadingBig : classesHeadingSmall}`}>
+        <div style={{color: headingColor}} className={`page-text-heading ${size.width > 1200 ? classesHeadingBig : classesHeadingSmall}`}>
           <div className="vertical-divider"></div>
           {heading}
           <div className="vertical-divider"></div>

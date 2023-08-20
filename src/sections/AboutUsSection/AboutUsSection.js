@@ -72,7 +72,7 @@ function AboutUsSection({dark = false}) {
               </Col>
               }
             </Row>
-              <Button style={{margin: "60px 0 20px 0"}} size='md' onClick={() => navigate('/become-our-client')}>{t('Home.Hero.button')}</Button>
+              <Button style={{margin: "80px 0 40px 0", fontSize: '32px'}} size='md' onClick={() => navigate('/become-our-client')}>{t('Home.Hero.button')}</Button>
             </PageText> 
     </Section>
   )

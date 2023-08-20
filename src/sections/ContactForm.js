@@ -43,7 +43,7 @@ function ContactForm({dark = false , black = false}) {
     .then(res => {
       if (res.status === 200) {
         setEmailRecievedStatusMsg(t("Home.ContactForm.recieved"))
-        setMessageColor('green')
+        setMessageColor('lime')
       }
       if (res.status !== 200) {
         setEmailRecievedStatusMsg(t("Home.ContactForm.recieved"))
@@ -76,7 +76,7 @@ function ContactForm({dark = false , black = false}) {
         md={{span: 8}} 
         xl={{span: 6}}
         >
-          <PageText heading={t("Home.ContactForm.heading")} />
+          <PageText headingColor="white" heading={t("Home.ContactForm.heading")} />
           <form ref={formRef} className={`contact-form ${width > 1200 ? classesBig : classesSmall}`}
             onSubmit={(e) => handleSubmit(e)}>
             <div className="form-input">
@@ -103,14 +103,14 @@ function ContactForm({dark = false , black = false}) {
                 />
             </div>
             <div className="form-input">
+              <div style={{color: `${messageColor}`}} className="response-message">
+                {emailRecievedStatusMsg}
+              </div>
               <Button className="form-button mb-4"
                 type="submit"
                 >
                 {t("Home.ContactForm.button")}
               </Button>
-              <div style={{color: `${messageColor}`}} className="response-message">
-                {emailRecievedStatusMsg}
-              </div>
             </div>
           </form>
         </Col>

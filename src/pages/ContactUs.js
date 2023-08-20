@@ -39,9 +39,9 @@ function ContactUs() {
         <div className="contact-us-links flex-sm-column flex-xl-row">
             <div className='contact-icon'>
                 <FaEnvelope size={iconSize} />
-                <a className='link text-black-50' href="mailto: enq@printonyourwall.pt" >paleta.permanente.uni@outlook.com</a>
+                <a className='link text-black-50' href="mailto: enq@printonyourwall.pt" >enq@printonyourwall.pt</a>
             </div>
-            <div className='contact-icon' onClick={() => window.open("https://goo.gl/maps/sYr2ftsyTo6Bctme8", "_blank")}>
+            <div className='contact-icon' onClick={() => window.open("https://goo.gl/maps/22vumTPvDr63rBCDA", "_blank")}>
                 <FaMapMarkerAlt size={iconSize} />
                 <p className='text-black-50 mb-0'>
                     {t("Home.ContactUs.icon1")}
