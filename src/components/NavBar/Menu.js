@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import '../../styles/Menu.css'
-import { Link, NavLink, useLocation, useNavigate, useParams, useResolvedPath, useSearchParams } from 'react-router-dom'
+import { useNavigate, useResolvedPath } from 'react-router-dom'
 import MenuLink from './MenuLink'
 import { NavContext } from '../../context/NavContext'
 import { useTranslation } from 'react-i18next'
@@ -28,7 +28,7 @@ function Menu({ showMenu, toggleMenu }) {
 
   const getCurrentPage = (path) => {
     const page = getPathItems(path, 1)
-    if (page == '') return 'home'
+    if (page === '') return 'home'
     return page
   }
 
@@ -40,7 +40,7 @@ function Menu({ showMenu, toggleMenu }) {
   const scrollTo = (ref, y, behavior = 'smooth') => {
     if (ref) {
       ref.current.scrollIntoView({behavior})
-    } else if (typeof y == 'number') {
+    } else if (typeof y === 'number') {
       window.scrollTo({
         top: y,
         behavior
@@ -73,7 +73,7 @@ function Menu({ showMenu, toggleMenu }) {
   useEffect(() => {
     currentPage.current = getCurrentPage(resolvedPath.pathname);
     scrollAuto(resolvedPath.pathname)
-  }, [resolvedPath])
+  }, [resolvedPath, getCurrentPage])
 
   useEffect(() => {
     if (section) {
@@ -88,23 +88,8 @@ function Menu({ showMenu, toggleMenu }) {
             <MenuLink path={"/home"} directTo={directTo}>
               {t("Menu.Home")}
             </MenuLink>
-            <MenuLink path={"/home/faq"} directTo={directTo} reference={faqRef}>
-            {t("Menu.Faq")}
-            </MenuLink>
-            <MenuLink path={"/home/contact-us"} directTo={directTo} reference={contactUsRef}>
-            {t("Menu.ContactUs")}
-            </MenuLink>
-            <MenuLink path={"/home/about-us"} directTo={directTo} reference={aboutUsRef}>
-            {t("Menu.AboutUs")}
-            </MenuLink>
-            <MenuLink path={"/home/message-us"} directTo={directTo} reference={messageUsRef}>
-            {t("Menu.ContactForm")}
-            </MenuLink>
-            <MenuLink path={"/gallery"} directTo={directTo}>
-            {t("Menu.Gallery")}
-            </MenuLink>
-            <MenuLink path={"/become-our-client"} directTo={directTo}>
-            {t("Menu.BecomeOurClient")}
+            <MenuLink path={"/before-and-after"} directTo={directTo}>
+              {t("Menu.BaA")}
             </MenuLink>
         </div>
     </div>
@@ -112,5 +97,3 @@ function Menu({ showMenu, toggleMenu }) {
 }
 
 export default Menu
-
-//TODO: when going form gallery -> contact-us -> menu doesnt scroll from there

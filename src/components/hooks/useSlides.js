@@ -33,12 +33,6 @@ function useSlides() {
     setSlides(slidesArr)
   }, [imageList, imageDetails])
 
-  // useEffect(() => {
-  //   console.log('imageList - ', imageList)
-  //   console.log('imageDetails - ', imageDetails)
-  //   console.log('slides - ', slides)
-  // }, [imageList, imageDetails, slides])
-
   return [slides, setSlides]
 }
 

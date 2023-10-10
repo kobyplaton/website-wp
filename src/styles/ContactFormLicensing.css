@@ -19,11 +19,16 @@
     font-size: 1.2rem;
 }
 
+.trademark-text {
+    text-align: center;
+}
+
 .card-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .card-info > div {

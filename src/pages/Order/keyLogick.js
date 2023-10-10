@@ -1,6 +1,5 @@
 import { customAlphabet } from "nanoid"
 import { deleteDbFile, getDbFile, setDbFile } from "../../firebase/firestore";
-// import { addToDb } from "../../firebase/firestore";
 
 export const generateKey = () => {
     const keygen = customAlphabet('1234567890abcdefghijklmnopqrstuvwxyz', 4);

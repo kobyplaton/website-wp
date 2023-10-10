@@ -4,7 +4,6 @@ import PageText from '../../components/PageText'
 import { NavContext } from '../../context/NavContext'
 import { Button, Col, Row } from 'react-bootstrap'
 import img from './parrot-with-white-background-removebg2.jpg'
-import { AiOutlineNumber } from 'react-icons/ai'
 import { useWindowSize } from '@uidotdev/usehooks'
 import { useTranslation } from 'react-i18next'
 import '../../styles/AboutUs.css'
@@ -20,14 +19,6 @@ const useImageSize = () => {
     return {width: 250, height: 400}
   }
 }
-
-const InputIcon = () => {
-  const size = useWindowSize()
-  if (size.width > 700) {
-    return <AiOutlineNumber style={{margin: '0 10px 10px 0', color:"blue"}} size={50} />
-  }
-}
-
 
 function AboutUsSection({dark = false}) {
 
@@ -46,22 +37,18 @@ function AboutUsSection({dark = false}) {
                   {t("Home.AboutUs.section1")}
                 </p>
                 <TextDivider />
-                  {/* <InputIcon /> */}
                 <p className='about-us-text'>
                   {t("Home.AboutUs.section2")}
                 </p>
                 <TextDivider />
-                  {/* <InputIcon /> */}
                 <p className='about-us-text'>
                   {t("Home.AboutUs.section3")}
                 </p>
                 <TextDivider />
-                  {/* <InputIcon /> */}
                 <p className='about-us-text'>
                   {t("Home.AboutUs.section4")}
                 </p>
                 <TextDivider />
-                {/* <InputIcon /> */}
                 <p className='about-us-text'>
                   {t("Home.AboutUs.section5")}
                 </p>
@@ -72,7 +59,7 @@ function AboutUsSection({dark = false}) {
               </Col>
               }
             </Row>
-              <Button style={{margin: "80px 0 40px 0", fontSize: '32px'}} size='md' onClick={() => navigate('/become-our-client')}>{t('Home.Hero.button')}</Button>
+              <Button className='color-rainbow-btn' style={{margin: "80px 0 40px 0", fontSize: '32px'}} size='md' onClick={() => navigate('/become-our-client')}>{t('Home.AboutUs.button')}</Button>
             </PageText> 
     </Section>
   )

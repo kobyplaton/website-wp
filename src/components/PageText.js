@@ -1,8 +1,8 @@
 import { useWindowSize } from '@uidotdev/usehooks'
 import React from 'react'
 
-const classesHeadingBig = 'my-5 font-big pb-5 line-height-l'
-const classesHeadingSmall = 'mt-5 mb-5 font-medium'
+const classesHeadingBig = 'my-5 font-big pb-5 page-text-heading-lineH-big'
+const classesHeadingSmall = 'mt-5 mb-5 font-medium page-text-heading-lineH-small'
 
 const textBig = 'font-ms mb-5'
 const textSmall = 'mb-5'

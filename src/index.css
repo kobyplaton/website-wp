@@ -5,9 +5,16 @@
   --color-grey : #818080;
   --color-dark-blue : rgb(41, 93, 207);
   --color-blue : rgb(41, 93, 207);
+  --color-blue-temp : linear-gradient(to right, red, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #aab500, #f9a825, #ff5722);
+  --color-blue-temp-2 : linear-gradient(180deg, red, #7e57c2, #2196f3, #f48fb1 );
+  --color-blue-temp-3 : linear-gradient(225deg, red 30%, #0647ed 60%, #f321de 100%);
+  --color-blue-temp-4 : linear-gradient(225deg, #0647ed 30%, red 60%, #f321de 100%);
   --color-light-grey : #eef0f3;
   --color-dark-grey : rgb(45,45,45);
   --color-black : #323232;
+  --color-orange : rgb(248, 125, 17);
+
+  --border-gradient : linear-gradient(to right top, #520393, #8264ee, #48d37d, #ccf41b, orange, red);
 
   --nav-height : 60px;
 
@@ -29,4 +36,14 @@ code {
   font-size: 120px !important;
   letter-spacing: 8px;
   line-height: 100px;
+}
+
+.color-rainbow {
+  background: var(--color-blue-temp);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.color-rainbow-btn {
+  background: var(--color-blue-temp);
+  border: none !important;
 }

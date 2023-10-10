@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import logo from '../../styles/images/logo.png'
 import '../../styles/Nav.css'
 import Menu from './Menu'
+import MenuPc from './MenuPc'
 import { useNavigate } from 'react-router-dom'
 import LangDropDown from './LangDropDown'
 import { useWindowSize } from '@uidotdev/usehooks'
+import { AiOutlineMenu } from 'react-icons/ai'
 
 function Nav() {
     
@@ -22,14 +24,13 @@ function Nav() {
     <div className='nav'>
         <div className="nav-content">
             <div className="nav-right">
-                {/* <img onClick={navigateHome} width={50} height={50} src={logo} alt='logo' /> */}
             </div>
             <div className="nav-left">
                 <LangDropDown />
-                {/* {size.width > 700 
+                {size.width > 700 
                 ? <MenuPc />
-                : <AiOutlineMenu size={iconSize} onClick={() => setToggleMenu((prev) => !prev)} />
-                } */}
+                : <AiOutlineMenu size={35} onClick={() => setToggleMenu((prev) => !prev)} />
+                }
             </div>
         </div>
         {size.width < 700 &&

@@ -1,8 +1,8 @@
 import { deleteObject, getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage"
 import { storage } from "./firebase_config"
 
-export const uploadImageToStorage = async ({id, imageFile}) => {
-    const imageRef = ref(storage, `images/${id}`)
+export const uploadImageToStorage = async ({id, imageFile, location = 'images'}) => {
+    const imageRef = ref(storage, `${location}/${id}`)
     try {
         const res = await uploadBytes(imageRef, imageFile)
         if (res.status === 200) return true
@@ -24,10 +24,10 @@ export const deleteImageInStorage = async ({id}) => {
 }
 
 
-export const getImageList = async (setImages) => {
+export const getImageList = async (setImages, location = 'images/') => {
     let images;
     try {
-        images = await listAll(ref(storage, "images/"))
+        images = await listAll(ref(storage, location))
         images.items.forEach(async (item) => {
             try {
                 const url = await getDownloadURL(item)

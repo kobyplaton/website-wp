@@ -39,13 +39,13 @@
     justify-content: space-between;
     gap: 30px;
     margin: 0 0 20px 0;
-    padding: 0 30px 0 30px;
+    padding: 0 50px;
 }
 
 .contact-us-center-container > div {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .contact-us-center-container > div > h3 {
@@ -65,15 +65,6 @@
     font-size: 1.2rem;
     padding: 0;
 }
-
-li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: var(--color-blue); /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
 
   .divider {
     width: 200px;

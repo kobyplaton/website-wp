@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import '../styles/ContactUs.css'
-import { FaEnvelope, FaMapMarkerAlt, FaParking } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaParking, FaPhone } from 'react-icons/fa'
 import PageText from '../components/PageText'
 import { NavContext } from '../context/NavContext'
 import { BiLinkExternal } from 'react-icons/bi'
@@ -17,21 +17,21 @@ function ContactUs() {
         <PageText heading={t("Home.ContactUs.heading")} />
         <div className="contact-us-center-container">
             <div>
-                <h3>Opening hours</h3>
+                <h3>{t('Home.ContactUs.sectionHours.heading')}</h3>
                 <ul>
-                    <h5>Monday to Friday</h5>
-                    <li>By Appointment Only</li>
+                    <h5>{t('Home.ContactUs.sectionHours.subheading1')}</h5>
+                    <li>{t('Home.ContactUs.sectionHours.text1')}</li>
                 </ul>
                 <ul>
-                    <h5>Saturday and Sunday</h5>
-                    <li>10:00 - 16:00</li>
+                    <h5>{t('Home.ContactUs.sectionHours.subheading2')}</h5>
+                    <li>{t('Home.ContactUs.sectionHours.text2')}</li>
                 </ul>
             </div>
             <div>
-                <h3>Live demonstrations</h3>
-                <ul>Printing live demonstrations:
-                    <div><b>Saturday</b> and <b>Sunday</b></div>
-                    <li><b>12pm</b> to <b>1pm</b> and <b>2pm</b> to <b>3pm</b></li>
+                <h3>{t('Home.ContactUs.sectionDemonstrations.heading')}</h3>
+                <ul>{t('Home.ContactUs.sectionDemonstrations.subheading')}
+                    <div><b>{t('Home.ContactUs.sectionDemonstrations.day1')}</b> {t('Home.ContactUs.sectionDemonstrations.and')} <b>{t('Home.ContactUs.sectionDemonstrations.day2')}</b></div>
+                    <li><b>12pm</b> {t('Home.ContactUs.sectionDemonstrations.to')} <b>1pm</b> {t('Home.ContactUs.sectionDemonstrations.and')} <b>2pm</b> {t('Home.ContactUs.sectionDemonstrations.to')} <b>3pm</b></li>
                 </ul>
             </div>
         </div>
@@ -58,6 +58,10 @@ function ContactUs() {
                         <BiLinkExternal />
                     </span>
                 </p>
+            </div>
+            <div className="contact-icon" onClick={() => window.open('tel:123123123', '_self')}>
+                <FaPhone size={iconSize} />
+                <a className='text-black-50' href="tel:935 928 585">935 928 585</a>
             </div>
         </div>
     </div>

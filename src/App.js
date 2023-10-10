@@ -10,13 +10,14 @@ import ContactUs from './pages/ContactUs'
 import OrderInstruction from './pages/Order/OrderInstruction'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/Fonts.css'
+import BeforeAndAfter from './pages/BeforeAndAfter/BeforeAndAfter'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
-    children: [
-        {
+  },
+  {
     path: '/admin',
     element: <Admin />,
     
@@ -24,10 +25,11 @@ const router = createBrowserRouter([
   {
     path: '/become-our-client',
     element: <OrderInstruction />
-  }
-    ]
   },
-
+  {
+    path: '/before-and-after',
+    element: <BeforeAndAfter />
+  }
 ])
 
 

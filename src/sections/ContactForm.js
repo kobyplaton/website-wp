@@ -1,35 +1,16 @@
-import React, { useContext, useRef, useState } from "react";
-import Section from "../components/Section";
+import React, { useRef, useState } from "react";
 import "../styles/ContactForm.css";
 import PageText from "../components/PageText";
-import { NavContext } from "../context/NavContext";
 import emailjs from '@emailjs/browser'
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useWindowSize } from "@uidotdev/usehooks";
-import img from '../styles/images/office-bkg-hq-2.png'
 import { useTranslation } from "react-i18next";
 import ContactFormLicensing from "./ContactFormLicensing";
 
 const classesBig = 'px-5'
 const classesSmall = 'px-3'
 
-const ImagesIfSizeIsBig = () => {
-  const {width} = useWindowSize()
-
-  if (width > 1200) {
-    return <div
-    style={{overflow: 'hidden'}}
-    >
-        <img
-         width={700} height={700} src={img} alt="" />
-        {/* <img
-         className="p-absolute" width={400} height={400} src={img} /> */}
-      </div>
-  }  
-}
-
 function ContactForm({dark = false , black = false}) {
-  const {messageUsRef} = useContext(NavContext);
   const [emailRecievedStatusMsg, setEmailRecievedStatusMsg] = useState('');
   const [messageColor, setMessageColor] = useState()
   const formRef = useRef()
@@ -42,16 +23,17 @@ function ContactForm({dark = false , black = false}) {
     emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_FROM_USER_TEMPLATE_ID, formRef.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
     .then(res => {
       if (res.status === 200) {
-        setEmailRecievedStatusMsg(t("Home.ContactForm.recieved"))
+        setEmailRecievedStatusMsg(t("ContactForm.recieved"))
         setMessageColor('lime')
+        formRef.current.reset()
       }
       if (res.status !== 200) {
-        setEmailRecievedStatusMsg(t("Home.ContactForm.recieved"))
+        setEmailRecievedStatusMsg(t("ContactForm.recieved"))
         setMessageColor('red')
       }
       
     })
-    .catch(e => console.error(t("Home.ContactForm.recieved"), e))
+    .catch(e => console.error(t("ContactForm.recieved"), e))
 
   };
 
@@ -76,13 +58,13 @@ function ContactForm({dark = false , black = false}) {
         md={{span: 8}} 
         xl={{span: 6}}
         >
-          <PageText headingColor="white" heading={t("Home.ContactForm.heading")} />
+          <PageText headingColor="white" heading={t("ContactForm.heading")} />
           <form ref={formRef} className={`contact-form ${width > 1200 ? classesBig : classesSmall}`}
             onSubmit={(e) => handleSubmit(e)}>
             <div className="form-input">
               <input className="input"
                 type="text"
-                placeholder={t("Home.ContactForm.name")}
+                placeholder={t("ContactForm.name")}
                 name="from_name"
                 required
                 />
@@ -90,14 +72,14 @@ function ContactForm({dark = false , black = false}) {
             <div className="form-input">
               <input className="input"
                 type="email"
-                placeholder={t("Home.ContactForm.email")}
+                placeholder={t("ContactForm.email")}
                 name="from_email"
                 required
                 />
             </div>
             <div className="form-input">
               <textarea className="textarea"
-                placeholder={t("Home.ContactForm.message")}
+                placeholder={t("ContactForm.message")}
                 name="message"
                 required
                 />
@@ -106,21 +88,20 @@ function ContactForm({dark = false , black = false}) {
               <div style={{color: `${messageColor}`}} className="response-message">
                 {emailRecievedStatusMsg}
               </div>
-              <Button className="form-button mb-4"
+              <Button className="form-button color-rainbow-btn mb-4"
                 type="submit"
                 >
-                {t("Home.ContactForm.button")}
+                {t("ContactForm.button")}
               </Button>
             </div>
           </form>
         </Col>
-        {width > 1200
-        && <Col
+         <Col
         xl={{span: 6}}
         >
         
           <ContactFormLicensing />
-        </Col>}
+        </Col>
       </Row>
     </Container>
 

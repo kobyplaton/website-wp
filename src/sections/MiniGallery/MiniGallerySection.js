@@ -8,7 +8,7 @@ function MiniGallerySection() {
     const {t} = useTranslation('common')
   return (
     <Section>
-        <PageText heading={t('Home.MiniGallery')}>
+        <PageText heading={t('Home.MiniGallery.heading')}>
             <MiniGallery />
         </PageText>
     </Section>

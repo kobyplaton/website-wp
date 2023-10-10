@@ -4,11 +4,16 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+    gap: 2rem;
 }
 
+
 .img-box {
-    background-color: black;
-    /* opacity: 0; */
+    padding: 1rem;
+    border-width: 4px;
+    border-style: solid;
+    border-image: var(--border-gradient);
+    border-image-slice: 1;
 }
 
 .img-box > img:hover {

@@ -1,6 +1,5 @@
 import React from 'react'
 import { convertImageSizes } from '../../extras/convertImageSizes'
-import { nanoid } from 'nanoid'
 
 function MiniGalleryImg({ src, optimalLength }) {
   const [convertedSizes, setConvertedSizes] = React.useState()
@@ -11,7 +10,7 @@ React.useEffect(() => {
   const img = new Image()
   img.src = src
   setOriginalSizes({width: img.width, height: img.height})
-},[])
+},[src])
 React.useEffect(() => {
   setConvertedSizes(convertImageSizes(originalSizes, optimalLength))
 }, [optimalLength, originalSizes])

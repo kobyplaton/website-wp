@@ -6,6 +6,7 @@ import GenerateKeySection from './GenerateKeySection'
 import ModifyGallerySection from './ModifyGallerySection/ModifyGallerySection'
 import ManageProcessesSection from './ManageProcessesSection/ManageProcessesSection'
 import { Accordion, Button } from 'react-bootstrap'
+import UploadBASection from './UploadBASection/UploadBASection'
 
 
 function Admin() {
@@ -59,18 +60,24 @@ function Admin() {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey='1'>
+                    <Accordion.Header>Upload Before And After</Accordion.Header>
+                    <Accordion.Body>
+                        <UploadBASection />
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey='2'>
                     <Accordion.Header>Generate Client Key</Accordion.Header>
                     <Accordion.Body>
                         <GenerateKeySection />
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey='2'>
+                <Accordion.Item eventKey='3'>
                     <Accordion.Header>Modify Gallery</Accordion.Header>
                     <Accordion.Body>
                         <ModifyGallerySection />
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey='3'>
+                <Accordion.Item eventKey='4'>
                     <Accordion.Header>Manage Current Processes</Accordion.Header>
                     <Accordion.Body>
                         <ManageProcessesSection />

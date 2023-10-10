@@ -91,35 +91,11 @@ function MenuPc() {
                 </NavLink>
             </Dropdown.Item>
             <Dropdown.Item>
-                <NavLink className={'menu-pc-link'} onClick={() => directTo("/home/faq", faqRef)}>
-                FAQ
+                <NavLink className={'menu-pc-link'} onClick={() => directTo("/before-and-after")}>
+                Before and After
                 </NavLink>
             </Dropdown.Item>
-            <Dropdown.Item>
-                <NavLink className={'menu-pc-link'} onClick={() => directTo("/home/contact-us", contactUsRef)}>
-                Contact Us
-                </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-                <NavLink className={'menu-pc-link'} onClick={() => directTo("/home/about-us", aboutUsRef)}>
-                About Us
-                </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-                <NavLink className={'menu-pc-link'} onClick={() => directTo("/home/message-us", messageUsRef)} path={"/home/message-us"} >
-                Message Us
-                </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-                <NavLink className={'menu-pc-link'} onClick={() => directTo("/gallery")}>
-                Gallery
-                </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-                <NavLink className={'menu-pc-link'} onClick={() => directTo("/become-our-client")}>
-                Become Our Client
-                </NavLink>
-            </Dropdown.Item>
+          
         </Dropdown.Menu>
     </Dropdown>
   )

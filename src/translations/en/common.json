@@ -2,13 +2,39 @@
     "Home": {
         "heading": "We Print On Your Walls",
         "Hero": {
-            "heading": "Watch Our Introductory Video!",
-            "text": "This video shows how we create our desins and bring them to your wall!",
-            "button": "Press to get started with your print"
+            "heading": "Watch Our Vertical Wallprinting Robots",
+            "message": "Vertical Printing  live demonstrations on weekends from 12pm to 1pm and 2pm to 3pm",
+            "trademark": "is a Registered Portuguese Trade Mark 699676",
+            "slogan": "\"Welcome to the Future\""
         },
-        "MiniGallery": "Checkout Some Of Our Wall Prints",
+        "MiniGallery": {
+            "heading": "Checkout Some Of Our Wall Prints",
+            "text": "Come to our showroom and see over 35 more sample wall prints"
+        },
+        "Licensing": {
+            "owner": "owned by Paleta Permanente LDA",
+            "name": "Paleta Permanente LDA",
+            "address": "Rua Rebelo Da Silva 14",
+            "postalCode": "8000-418 Faro"
+        },
         "ContactUs": {
             "heading": "Contact Us",
+            "sectionHours": {
+                "heading": "Opening hours",
+                "subheading1": "Monday to Friday",
+                "text1": "By Appointment Only",
+                "subheading2": "Saturday and Sunday",
+                "text2": "10am to 4pm"
+            },
+            "sectionDemonstrations": {
+                "heading": "Live demonstrations",
+                "subheading": "Printing live demonstrations:",
+                "day1": "Saturday",
+                "day2": "Sunday",
+                "and": "and",
+                "to": "to"
+            },
+
             "icon1": "Our office, Faro",
             "icon2": "Free Parking Nearby"
         },
@@ -18,41 +44,9 @@
             "section2": "Step into our showroom and witness the magic of bringing your imagination to life on your walls. While our showroom displays samples, the possibilities are truly limitless when it comes to transforming your space.",
             "section3": "We can turn your wildest ideas into reality. Whether it's a breathtaking landscape, a captivating abstract design, or something entirely unique, we have the expertise to make it happen.",
             "section4": "Using cutting-edge technology and premium materials, we bring your vision to life with precision and quality. Let us create a masterpiece that will leave a lasting impression.",
-            "section5": "Visit us today and unlock the full potential of your walls. Printonyouwall™ - You dream it and we'll print it"
-        },
-        "WallPrinting": {
-            "heading": "How does wall printing work?",
-            "intro": "Wall printing is an exciting new technique that allows custom designs to be directly applied to walls. Here will explore the process of how wall printing works, combining technology, creativity, and craftsmanship to create stunning visual displays.",
-            "conclusion": "After printing, the surface needs time to dry and allow the ink to set properly. This can take a few hours or more. To protect the print, a protective coating or sealant may be applied to make it more durable.",
-            "conclusion1": "Wall printing combines technology and artistry to bring customized designs to life on walls. By understanding the process, we can appreciate the craftsmanship and creativity involved. This innovative technique opens up new possibilities for personalization, branding, and artistic expression in various spaces. As wall printing continues to evolve, it plays a significant role in the world of contemporary art.",
-            "section1": {
-                "heading": "1. Specialized Printing Equipment:",
-                "text": "Wall printing starts with special printers designed specifically for this purpose. These advanced printers ensure accurate and high-quality image reproduction."
-            },
-            "section2": {
-                "heading": "2. Surface Preparation:",
-                "text": "Before printing, the wall surface is carefully prepared by cleaning off any dust or dirt. Sometimes, a primer or base coat is applied to help the print adhere better and achieve the best results."
-            },
-            "section3": {
-                "heading": "3. Digital Image Processing:",
-                "text": "The desired design or image is digitally processed and adjusted to fit the printer's requirements. This ensures the image will be printed correctly on the wall."
-            },
-            "section4": {
-                "heading": "4. Alignment and Calibration:",
-                "text": "The printer uses alignment and calibration systems to position the printing head accurately. This ensures that the design is printed in the right place on the wall."
-            },
-            "section5": {
-                "heading": "5. Ink Application:",
-                "text": "Special inks are used for wall printing to ensure they adhere well to different wall materials and withstand environmental factors. The printer applies the ink in layers, building up the image with precise detail and colours."
-            },
-            "section6": {
-                "heading": "6. Preservation of Wall Texture:",
-                "text": "An important aspect of wall printing is preserving the wall's original texture. The ink is applied in a way that respects and maintains the unique feel of the wall, so it doesn't change its texture."
-            },
-            "section7": {
-                "heading": "7. Drying and Finishing:",
-                "text": "After printing, the surface needs time to dry and allow the ink to set properly. This can take a few hours or more. To protect the print, a protective coating or sealant may be applied to make it more durable."
-            }
+            "section5": "Visit us today and unlock the full potential of your walls. Printonyouwall™ - You dream it and we'll print it",
+            "button": "Press to get started with your print"
+        }
         },
         "ContactForm": {
             "heading": "Message Us And We'll Reply Within 48 Hours",
@@ -65,9 +59,33 @@
         },
 
         "Faq": {
+            "heading": "Frequently Asked Questions",
             "Question1": {
                 "question": "What is wall printing?",
-                "answer": "Wall printing, is an innovative method that involves using a specialized vertical wall printer to print custom designs directly onto various surfaces. This technique eliminates the need for glues or sticky components, ensuring that the original texture and appearance of the wall remain intact. It enables the transformation of plain walls into personalized and visually striking works of art, making it an ideal solution for adding character and individuality to any space, whether it is domestic or comercial."
+                "answer": "Vertical Wall Printing is an advanced technique that allows us to reproduce high-definition images and designs directly onto vertical surfaces, such as cement, brick, drywall, wood, tiles, metal and even glass. Utilizing state-of-the-art digital printing technology and proprietary software, our system precisely applies ink with exceptional accuracy and color reproduction, resulting in stunning, lifelike visuals that transcend traditional painting and wallpapering methods. The key features and advantages of Vertical Wall Printing include:",
+                "extra": {
+                    "1": {
+                        "body": "With this technology, artists, designers, and businesses can bring their imagination to life like never before. Whether it's awe-inspiring murals, captivating branding displays, or personalized spaces, the possibilities for creative expression are limitless.",
+                        "heading": "(Unleashing Creativity)"
+                    },
+                    "2": {
+                        "body": "From residential homes to commercial establishments, our Vertical Wall Printing solutions cater to every client's unique preferences and requirements. The ability to customize designs ensures a perfect fit for any space, capturing the essence of individuality.",
+                        "heading": "(Seamless Customization)"
+                    },
+                    "3": {
+                        "body": "Traditional hand-painted murals can take weeks to complete.Vertical Wall Printing drastically reduces turnaround time without compromising on quality. Projects that once seemed arduous and time-consuming are now achievable in a fraction of the time.",
+                        "heading": "(Efficiency and Speed)"
+                    },
+                    "4": {
+                        "body": "We are committed to environmental responsibility. Our printing process employs eco-friendly inks and minimizes waste, making it a sustainable choice for conscious customers.",
+                        "heading": "(Sustainable and Eco-Friendly)"
+                    }, 
+                    "5": {
+                        "body": "The printed surfaces are easy to maintain and clean, providing long-lasting visual appeal without the need for costly touch-ups or replacements.",
+                        "heading": "(Ease of Maintenance"
+                    }
+                    
+                }
             },
             "Question2": {
                 "question": "What are the costs of printing?",
@@ -87,7 +105,7 @@
             },
             "Question6": {
                 "question": "What's the durability of the prints?",
-                "answer": "Images can be printed for indoor and outdoor walls. When displayed indoors, the colours of the printed images are expected to maintain their quality for approximately 7 to 10 years. For outdoor installations, the colour durability is estimated at around 5 to 7 years."
+                "answer": "Images can be printed for indoor and outdoor walls. When displayed indoors, the colours of the printed images are expected to maintain their quality for a minimum of 5 to 7 years. For outdoor installations, the colour durability is a minimum of 3 to 5 years."
             },
             "Question7": {
                 "question": "What type of ink do we use?",
@@ -97,47 +115,51 @@
                 "question": "How big can my print be?",
                 "answer": "There is no width limit; however, for the height, we can print up to 4 meters without requiring any scaffolding."
             }
-        }
-    },
+        },
     "Gallery": {
         "heading": "Gallery",
         "details": "Details",
         "lightbox": {
-            "title": "Title:",
-            "width": "Width:",
-            "height": "Height:",
-            "area": "Surface Area",
-            "price": "Price Approximation:",
-            "details": "Extra Details:"
+            "title": "Title :",
+            "width": "Width :",
+            "height": "Height :",
+            "area": "Surface Area :",
+            "price": "Price :",
+            "details": "Extra Details :",
+            "resolution": "Resolution :"
         }
     },
     "Order": {
         "heading": "Become our client",
         "subheading": "Lets go ahead with the print?",
-        "verified": "",
-        "wrongMsg": "",
         "instructions": {
-            "1": "At our office get a unique client key",
-            "2": "Complete the form Bellow",
-            "3": "Wait for us to contact you via email and organise a sight survey",
-            "4": "Come to our office to see wall printing in real life"
-        },
-        "form": {
-            "key": "Customer Key",
-            "email": "Email",
-            "repeatEmail": "Repeat Email Address",
-            "emailMsg": "We'll never share your email with anyone else.",
-            "checkbox": "I wish to go ahead with the print, please contact me",
-            "button": "Verify"
+            "1": {
+                "heading": "Come to our office to see wall printing in real life",
+                "text": "It is very important to see wall prints in real life, because no photo can serve as an accurate representation of a wall print"
+            },
+            "2": {
+                "heading": "At our offices get your unique customer reference number",
+                "text": "While at our offfices and having asked all your questions and satisfied yourself that you want to go ahead with a print. You need to firstly acquire your unique customer reference number and then before starting with the print, we first need to organise an appointment for a site survey at your location in order to confirm that all the conditions for the print are met, so that we can do our best job for you!"
+            },
+            "3": {
+                "heading": "What is a site survey?",
+                "text": "For instance we measure your printing space to determine the print area size available and identify any obstacles such as switches or plugs, check floor levels and wall levels."
+            },
+            "4": {
+                "heading": "Print your image",
+                "text": "We bring our cutting-edge wallprinter onsite and put ink to surface. Our ink cures immediately, so there's no need for drying time."
+            }
         }
     },
     "Menu": {
         "Home": "Home",
-        "Faq": "FAQ",
-        "ContactUs": "Contact Us",
-        "AboutUs": "About Us",
-        "ContactForm": "Message Us",
-        "BecomeOurClient": "Become our client",
-        "Gallery": "Gallery"
+        "BaA": "Before and After"
+    },
+    "BaA": {
+        "heading": "Here Are Some Ideas For You To Think About",
+        "domestic": "Domestic",
+        "commercial": "Commercial",
+        "before": "Before",
+        "after": "After"
     }
 }

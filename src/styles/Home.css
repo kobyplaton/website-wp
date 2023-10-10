@@ -1,7 +1,6 @@
 
 
 .page-text {
-    /* font-family: 'Roboto', sans-serif; */
     display: flex;
     flex-direction: column;
     font-weight: 300;
@@ -15,15 +14,26 @@
 .page-text-heading {
     font-weight: 100;
     font-size: 32px;
-    /* text-align: center; */
     padding: 0 10px;
     text-transform: capitalize;
-    line-height: 2rem;
+    line-height: 3.5rem;
     word-spacing: .2rem;
     display: flex;
     gap: 4rem;
     align-items: center;
     justify-content: center;
+    background: var(--color-blue-temp);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;
+
+}
+
+.page-text-heading-lineH-big {
+    line-height: 3.5rem;
+}
+.page-text-heading-lineH-small {
+    line-height: 2rem;
 }
 
 .text-align-start {
@@ -36,6 +46,7 @@
 
 .vertical-divider {
     height: 50px;
-    width: 1px;
+    width: 3px;
     background-color: var(--color-blue);
+    background-image: var(--color-blue);
 }

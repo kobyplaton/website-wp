@@ -11,10 +11,10 @@ function Faq() {
 
   return (
     <div ref={faqRef} className='faq mb-5'>
-      {questions.map(({question, answer}, index) => {
+      {questions.map(({question, answer, extra}, index) => {
         return (
 
-          <Question key={index} question={question} answer={answer} />
+          <Question key={index} question={question} answer={answer} extra={extra} />
         )
       })
     }

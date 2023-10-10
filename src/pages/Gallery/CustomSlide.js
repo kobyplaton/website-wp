@@ -17,7 +17,7 @@ const useSlideSize = () => {
 }
 
 function CustomSlide({ slide }) {
-  const {src, details, title, width, height, price} = slide;
+  const {src, width, height, price} = slide;
   const size = useSlideSize()
 
   const {t} = useTranslation('common')
@@ -45,14 +45,21 @@ useEffect(() => {
   return (
     <div className='custom-slide'>
       <img src={src} width={convertedSizes.width} height={convertedSizes.height} alt='' />
-      <div style={{color: 'white'}}>{t("Gallery.lightbox.width")} {width}</div>
-      <div style={{color: 'white'}}>{t("Gallery.lightbox.height")} {height}</div>
-      <div style={{color: 'white'}}>{t("Gallery.lightbox.area")} {multiplyStrings(height, width)}m²</div>
-      {/* <div style={{color: 'white'}}>{t("Gallery.lightbox.title")} {title}</div>
-      <div style={{color: 'white'}}>{t("Gallery.lightbox.price")} {price}</div>
-      <div style={{color: 'white'}}>{t("Gallery.lightbox.details")} {details}</div> */}
+      <div className="details-container">
+        <div className="details">
+          <div style={{color: 'white'}}>{t("Gallery.lightbox.width")} {width}</div>
+          <div style={{color: 'white'}}>{t("Gallery.lightbox.height")} {height}</div>
+          <div style={{color: 'white'}}>{t("Gallery.lightbox.area")} {multiplyStrings(height, width)}mtrs²</div>
+        </div>
+        <div className="details">
+          
+          <div style={{color: 'white'}}>{t("Gallery.lightbox.resolution")} 8PASS 720x1440 DPI</div>
+          <div style={{color: 'white'}}>{t("Gallery.lightbox.price")}<span style={{color: 'red'}}> {price} + IVA</span></div>
+        </div>
+      </div>
     </div>
   )
 }
 
 export default CustomSlide
+

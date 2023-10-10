@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Section from '../components/Section'
 import PageText from '../components/PageText'
-import ReactPlayer from 'react-player/youtube'
 import { useTranslation } from 'react-i18next'
-import Button from 'react-bootstrap/Button'
-import { useNavigate } from 'react-router-dom'
 import '../styles/Bkgs.css'
 import { useWindowSize } from '@uidotdev/usehooks'
+import { WistiaPlayer, WistiaProvider } from '@wistia/react-embeds'
 
 const videoSize = {
   medium: {
@@ -37,13 +35,11 @@ const chooseSize = (width) => {
     } else {
       sizes = { button: buttonBig, videoSize: videoSize.big }
     }
-    console.log(sizes)
     return sizes;
 }
 
 function HeroSection({ dark = false }) {
   const {t} = useTranslation('common')
-  const navigate = useNavigate()
   const {width} = useWindowSize()
   const [sizes, setSizes] = useState(chooseSize(500))
 
@@ -55,7 +51,17 @@ function HeroSection({ dark = false }) {
       <Section dark={dark}>
           <PageText heading={t('Home.Hero.heading')}>
           </PageText>
-          <ReactPlayer style={{marginBottom: "60px"}} controls={true} width={sizes.videoSize.width} height={sizes.videoSize.height} url="https://youtu.be/10qAcj74MjY" />
+          <WistiaProvider>
+            <WistiaPlayer
+              hashedId="vxdbroqsmr"
+              videoFoam={false}
+              style={{
+                width: '640px',
+                height: '360px',
+              }}
+            ></WistiaPlayer>
+          </WistiaProvider>
+          <p style={{textAlign: 'center', marginTop: '30px',fontSize: '1.5rem', fontWeight: '300', color: 'red'}}>{t('Home.Hero.message')}</p>
       </Section>
     </div>
   )

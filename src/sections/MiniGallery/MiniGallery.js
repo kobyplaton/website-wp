@@ -1,33 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../../styles/MiniGallery.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { getImageList } from '../../firebase/storage';
 import { nanoid } from 'nanoid'
-import { useWindowSize } from '@uidotdev/usehooks'
-import MiniGalleryImg from './MiniGalleryImg';
 import Lightbox from 'yet-another-react-lightbox'
 import CustomSlide from '../../pages/Gallery/CustomSlide';
 import { getCollectionItems } from '../../firebase/firestore';
+import { useTranslation } from 'react-i18next';
 
-const useImageSize = () => {
-    const {width} = useWindowSize()
-  
-    if (width < 700) {
-      return 250
-    } else if (width > 700 && width < 1400) {
-      return 400
-    } else {
-      return 500
-    }
-  }
 function MiniGallery() {
 
     const [lightbox, toggleLightbox] = React.useState()
     const [imageList, setImageList] = React.useState([])
     const [imageDetails, setImageDetails] = React.useState([])
     const [slides, setSlides] = React.useState([])
-    const optimalLength = useImageSize()
     const [currentSlideIndex, setCurrentSlideIndex] = React.useState(0)
+    const {t} = useTranslation('common')
 
     const handleImageClick = (index) => {
       setCurrentSlideIndex(index)
@@ -50,7 +38,8 @@ function MiniGallery() {
     for (let image of imageList) {
       for (let detail of imageDetails) {
         if (image.src.includes(detail.id)) {
-          slidesArr.push({src: image.src, width: image.width, height: image.height, ...detail})
+            slidesArr.push({src: image.src, width: image.width, height: image.height, ...detail})
+          
         }
       }
     }
@@ -72,17 +61,14 @@ function MiniGallery() {
          />
         {slides.map((slide, index) => (
           <div key={nanoid()} className="gallery-item-container">
-            <div className='image-details'>
-              {/* {slide.details} */}
-            </div>
             <div className="img-box">
-              <img onClick={() => handleImageClick(index)} key={nanoid()} src={slide.src} width={250} height={350}></img>
+              <img style={{backgroundColor: 'white'}} onClick={() => handleImageClick(index)} alt='' key={nanoid()} src={slide.src} height={350}></img>
             </div>
           </div>
         ))}
       </div>
       <div className='gallery-text'>
-        Come to our showroom to see over 40 wall prints!
+        {t('Home.MiniGallery.text')}
       </div>
     </>
   )

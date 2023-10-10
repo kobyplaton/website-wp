@@ -14,7 +14,6 @@
     justify-content: center;
 }
 .trademark-text {
-    /* font-family: 'Tangerine'; */
     font-size: 1rem;
     animation: fade-in 1500ms;
 }
@@ -51,7 +50,6 @@
 }
 
 .subhero {
-    /* font-family: 'Tangerine'; */
     font-size: 48px;
     font-weight: 400;
     margin-top: 50px;
